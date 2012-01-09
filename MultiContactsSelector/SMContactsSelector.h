@@ -1,6 +1,6 @@
 //
 //  SMContactsSelector.h
-//  IguanaGet
+//  
 //
 //  Created by Sergio on 03/03/11.
 //  Copyright 2011 Sergio. All rights reserved.
@@ -25,7 +25,8 @@
 {
 
 	id delegate;
-	
+	BOOL wantEmail;
+    
 @private
     
     IBOutlet UITableView *table;
@@ -62,5 +63,6 @@
 @property (nonatomic) BOOL searchWasActive;
 @property (nonatomic, retain) AlertTableView *alertTable;
 @property (nonatomic, retain) UITableView *currentTable;
+@property (nonatomic) BOOL wantEmail;
 
 @end

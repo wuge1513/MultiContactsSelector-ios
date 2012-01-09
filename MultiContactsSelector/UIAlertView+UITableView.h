@@ -1,6 +1,6 @@
 //
 //  UIAlertView+UITableView.h
-//  IguanaGet
+//  
 //
 //  Created by Sergio on 03/06/11.
 //  Copyright 2011 Sergio. All rights reserved.

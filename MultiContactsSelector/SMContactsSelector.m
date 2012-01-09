@@ -1,6 +1,6 @@
 //
 //  SMContactsSelector.m
-//  IguanaGet
+//  
 //
 //  Created by Sergio on 03/03/11.
 //  Copyright 2011 Sergio. All rights reserved.
@@ -124,6 +124,7 @@
 @synthesize selectedItem;
 @synthesize currentTable;
 @synthesize arrayLetters;
+@synthesize wantEmail;
 
 - (void)viewDidLoad
 {
@@ -185,21 +186,30 @@
         name = ABRecordCopyValue(person, kABPersonFirstNameProperty);
         CFStringRef lastNameString;
         lastNameString = ABRecordCopyValue(person, kABPersonLastNameProperty);
+        CFStringRef emailString;
+        emailString = ABRecordCopyValue(person, kABPersonEmailProperty);
         
 		NSString *nameString = (NSString *)name;
 		NSString *lastName = (NSString *)lastNameString;
+        NSString *email = (NSString *)emailString;
         
         if ((id)lastNameString != nil)
         {
             nameString = [NSString stringWithFormat:@"%@ %@", nameString, lastName];
         }
-        
+
 		if ((tels != @"") || (![[tels lowercaseString] containsString:@"null"]))
 		{
 			NSMutableDictionary *info = [NSMutableDictionary new];
 			[info setValue:[NSString stringWithFormat:@"%@", [[nameString stringByReplacingOccurrencesOfString:@" " withString:@""] substringFrom:0 to:1]] forKey:@"letter"];
 			[info setValue:[NSString stringWithFormat:@"%@", nameString] forKey:@"name"];
 			[info setValue:[NSString stringWithFormat:@"%@", tels] forKey:@"telephone"];
+            
+            if ((id)emailString != nil)
+            {
+                [info setValue:[NSString stringWithFormat:@"%@", email] forKey:@"email"];
+            }
+            
             [info setValue:@"-1" forKey:@"rowSelected"];
             
             if (!lotsItems) 
@@ -292,7 +302,8 @@
 - (void)acceptAction
 {
 	NSMutableArray *telephones = [NSMutableArray new];
-	
+	//NSMutableArray *emails = [NSMutableArray new];
+    
 	for (int i = 0; i < [arrayLetters count]; i++)
 	{
 		NSMutableArray *obj = [[dataArray objectAtIndex:0] valueForKey:[arrayLetters objectAtIndex:i]];
@@ -327,7 +338,7 @@
 {
 	if (tableView == self.searchDisplayController.searchResultsTableView)
 	{
-		[self tableView:self.searchDisplayController.searchResultsTableView accessoryButtonTappedForRowWithIndexPath: indexPath];
+		[self tableView:self.searchDisplayController.searchResultsTableView accessoryButtonTappedForRowWithIndexPath:indexPath];
 		[self.searchDisplayController.searchResultsTableView deselectRowAtIndexPath:indexPath animated:YES];
 	}
 	else

@@ -30,7 +30,7 @@
         for(int i = 0; i < [_data count]; i++)
         {
             [messageString appendString:@"\n\n"];
-            tableHeight += 53;
+            tableHeight += 48;
         }
     }
     else

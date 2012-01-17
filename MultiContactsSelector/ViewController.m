@@ -40,9 +40,10 @@
 - (void)showContacts
 {
     SMContactsSelector *controller = [[SMContactsSelector alloc] initWithNibName:@"SMContactsSelector" bundle:nil];
-	controller.delegate = self;
-	[self presentModalViewController:controller animated:YES];
-	[controller release];
+    controller.delegate = self;
+    controller.requestData = DATA_CONTACT_EMAIL; //DATA_CONTACT_TELEPHONE
+    [self presentModalViewController:controller animated:YES];
+    [controller release];
 }
 
 #pragma -
@@ -57,6 +58,16 @@
         str = [str reformatTelephone];
 		
 		NSLog(@"Telephone: %@", str);		
+	}
+}
+
+- (void)numberOfRowsSelected:(NSInteger)numberRows withEmails:(NSArray *)emails
+{
+    for (int i = 0; i < [emails count]; i++)
+	{
+		NSString *str = [emails objectAtIndex:i];
+
+		NSLog(@"Emails: %@", str);		
 	}
 }
 

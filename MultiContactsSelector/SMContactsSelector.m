@@ -124,12 +124,22 @@
 @synthesize selectedItem;
 @synthesize currentTable;
 @synthesize arrayLetters;
-@synthesize wantEmail;
+@synthesize requestData;
+@synthesize alertTitle;
 
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
 	
+    if ((requestData != DATA_CONTACT_TELEPHONE) && (requestData != DATA_CONTACT_EMAIL))
+    {
+        [self.navigationController dismissModalViewControllerAnimated:YES];
+        
+        @throw ([NSException exceptionWithName:@"Undefined data request"
+                                reason:@"Define requestData variable (EMAIL or TELEPHONE)" 
+                              userInfo:nil]);
+    }
+    
     NSString *currentLanguage = [[[[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"] objectAtIndex:0] lowercaseString];
 	
     // Jetzt Spanisch und Englisch nur
@@ -141,12 +151,15 @@
 		arrayLetters = [[[NSArray spanishAlphabet] createList] retain];
         cancelItem.title = @"Cancelar";
         doneItem.title = @"Hecho";
+            alertTitle = @"Selecciona";
 	}
 	else
 	{
 		arrayLetters = [[[NSArray englishAlphabet] createList] retain];
         cancelItem.title = @"Cancel";
         doneItem.title = @"Done";
+        
+            alertTitle = @"Select";
 	}
 
 	cancelItem.action = @selector(dismiss);
@@ -160,27 +173,27 @@
 	for (int i = 0; i < nPeople; i++)
 	{
 		ABRecordRef person = CFArrayGetValueAtIndex(allPeople, i);
-		ABMultiValueRef phoneNumberProperty = ABRecordCopyValue(person, kABPersonPhoneProperty);
+		ABMultiValueRef property = ABRecordCopyValue(person, (requestData == DATA_CONTACT_TELEPHONE) ? kABPersonPhoneProperty : kABPersonEmailProperty);
         
-		NSArray *telephone = (NSArray *)ABMultiValueCopyArrayOfAllValues(phoneNumberProperty);
-		CFRelease(phoneNumberProperty);
+		NSArray *propertyArray = (NSArray *)ABMultiValueCopyArrayOfAllValues(property);
+		CFRelease(property);
         
-		NSString *tels = @"";
+		NSString *objs = @"";
         BOOL lotsItems = NO;
-		for (int i = 0; i < [telephone count]; i++)
+		for (int i = 0; i < [propertyArray count]; i++)
 		{
-			if (tels == @"") 
+			if (objs == @"") 
 			{
-				tels = [telephone objectAtIndex:i];
+				objs = [propertyArray objectAtIndex:i];
 			}
 			else 
 			{
                 lotsItems = YES;
-				tels = [tels stringByAppendingString:[NSString stringWithFormat:@",%@", [telephone objectAtIndex:i]]];
+				objs = [objs stringByAppendingString:[NSString stringWithFormat:@",%@", [propertyArray objectAtIndex:i]]];
 			}
 		}
     
-		[telephone release];
+		[propertyArray release];
 
 		CFStringRef name;
         name = ABRecordCopyValue(person, kABPersonFirstNameProperty);
@@ -191,40 +204,49 @@
         
 		NSString *nameString = (NSString *)name;
 		NSString *lastName = (NSString *)lastNameString;
-        NSString *email = (NSString *)emailString;
         
         if ((id)lastNameString != nil)
         {
             nameString = [NSString stringWithFormat:@"%@ %@", nameString, lastName];
         }
 
-		if ((tels != @"") || (![[tels lowercaseString] containsString:@"null"]))
+        NSMutableDictionary *info = [NSMutableDictionary new];
+        [info setValue:[NSString stringWithFormat:@"%@", [[nameString stringByReplacingOccurrencesOfString:@" " withString:@""] substringFrom:0 to:1]] forKey:@"letter"];
+        [info setValue:[NSString stringWithFormat:@"%@", nameString] forKey:@"name"];
+        [info setValue:@"-1" forKey:@"rowSelected"];
+        
+        if ((objs != @"") || (![[objs lowercaseString] containsString:@"null"]))
 		{
-			NSMutableDictionary *info = [NSMutableDictionary new];
-			[info setValue:[NSString stringWithFormat:@"%@", [[nameString stringByReplacingOccurrencesOfString:@" " withString:@""] substringFrom:0 to:1]] forKey:@"letter"];
-			[info setValue:[NSString stringWithFormat:@"%@", nameString] forKey:@"name"];
-			[info setValue:[NSString stringWithFormat:@"%@", tels] forKey:@"telephone"];
-            
-            if ((id)emailString != nil)
+            if (requestData == DATA_CONTACT_EMAIL) 
             {
-                [info setValue:[NSString stringWithFormat:@"%@", email] forKey:@"email"];
-            }
-            
-            [info setValue:@"-1" forKey:@"rowSelected"];
-            
-            if (!lotsItems) 
-            {
-                [info setValue:[NSString stringWithFormat:@"%@", tels] forKey:@"telephoneSelected"];
+                [info setValue:[NSString stringWithFormat:@"%@", objs] forKey:@"email"];
+                
+                if (!lotsItems) 
+                {
+                    [info setValue:[NSString stringWithFormat:@"%@", objs] forKey:@"emailSelected"];
+                }
+                else
+                {
+                    [info setValue:@"" forKey:@"emailSelected"];
+                }
             }
             else
             {
-                [info setValue:@"" forKey:@"telephoneSelected"];
+                [info setValue:[NSString stringWithFormat:@"%@", objs] forKey:@"telephone"];
+                
+                if (!lotsItems) 
+                {
+                    [info setValue:[NSString stringWithFormat:@"%@", objs] forKey:@"telephoneSelected"];
+                }
+                else
+                {
+                    [info setValue:@"" forKey:@"telephoneSelected"];
+                }
             }
-            
-			[dataArray addObject:info];
-			
-			[info release];
 		}
+        
+        [dataArray addObject:info];
+        [info release];
         
         if (name) CFRelease(name);
         if (lastNameString) CFRelease(lastNameString);
@@ -301,7 +323,7 @@
 
 - (void)acceptAction
 {
-	NSMutableArray *telephones = [NSMutableArray new];
+	NSMutableArray *objects = [NSMutableArray new];
 	//NSMutableArray *emails = [NSMutableArray new];
     
 	for (int i = 0; i < [arrayLetters count]; i++)
@@ -315,17 +337,23 @@
 			
 			if (checked)
 			{
-				[telephones addObject:[item valueForKey:@"telephoneSelected"]];
+				(requestData == DATA_CONTACT_TELEPHONE) ? [objects addObject:[item valueForKey:@"telephoneSelected"]] : [objects addObject:[item valueForKey:@"emailSelected"]];
 			}
 		}
 	}
 	
-	if ([self.delegate respondsToSelector:@selector(numberOfRowsSelected:withTelephones:)]) 
-	{
-		[self.delegate numberOfRowsSelected:[telephones count] withTelephones:telephones];
-	}
+    if (requestData == DATA_CONTACT_TELEPHONE)
+    {
+        if ([self.delegate respondsToSelector:@selector(numberOfRowsSelected:withTelephones:)]) 
+            [self.delegate numberOfRowsSelected:[objects count] withTelephones:objects];
+    }
+	else
+    {
+        if ([self.delegate respondsToSelector:@selector(numberOfRowsSelected:withEmails:)]) 
+            [self.delegate numberOfRowsSelected:[objects count] withEmails:objects];
+    }
 
-	[telephones release];
+	[objects release];
 	[self dismiss];
 }
 
@@ -371,7 +399,7 @@
 		
 		item = (NSMutableDictionary *)[obj objectAtIndex:indexPath.row];
 	}
-	
+
 	cell.textLabel.text = [item objectForKey:@"name"];
 	cell.textLabel.adjustsFontSizeToFitWidth = YES;
     
@@ -425,17 +453,17 @@
 		item = (NSMutableDictionary *)[obj objectAtIndex:indexPath.row];
 	}
 	
-    NSArray *telephonesArray = (NSArray *)[[item valueForKey:@"telephone"] componentsSeparatedByString:@","];
-    int telephones = [telephonesArray count];
+    NSArray *objectsArray = (NSArray *)[[item valueForKey:(requestData == DATA_CONTACT_TELEPHONE) ? @"telephone" : @"email"] componentsSeparatedByString:@","];
+    int objectsCount = [objectsArray count];
 
-    if (telephones > 1)
+    if (objectsCount > 1)
     {
         selectedItem = item;
         self.currentTable = tableView;
         
         alertTable = [[AlertTableView alloc] initWithCaller:self 
-                                                       data:telephonesArray 
-                                                      title:NSLocalizedString(@"selectTelephone", @"")
+                                                       data:objectsArray 
+                                                      title:alertTitle
                                                  context:self
                                               dictionary:item
                                                  section:indexPath.section
@@ -478,7 +506,7 @@
     }
     else if ([text isEqualToString:@"-2"])
     {
-        [selectedItem setValue:@"" forKey:@"telephoneSelected"];
+        (requestData == DATA_CONTACT_TELEPHONE) ? [selectedItem setValue:@"" forKey:@"telephoneSelected"] : [selectedItem setValue:@"" forKey:@"emailSelected"];
         [selectedItem setObject:[NSNumber numberWithBool:NO] forKey:@"checked"];
         [selectedItem setValue:@"-1" forKey:@"rowSelected"];
         UITableViewCell *cell = [selectedItem objectForKey:@"cell"];
@@ -489,7 +517,7 @@
     }
     else
     {
-        [selectedItem setValue:text forKey:@"telephoneSelected"];
+        (requestData == DATA_CONTACT_TELEPHONE) ? [selectedItem setValue:text forKey:@"telephoneSelected"] : [selectedItem setValue:text forKey:@"emailSelected"];
         [selectedItem setObject:[NSNumber numberWithBool:YES] forKey:@"checked"];
         
         UITableViewCell *cell = [selectedItem objectForKey:@"cell"];

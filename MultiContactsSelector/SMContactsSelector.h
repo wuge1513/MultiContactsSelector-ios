@@ -12,10 +12,17 @@
 #import "NSString+Additions.h"
 #import "UIAlertView+UITableView.h"
 
+typedef enum 
+{
+    DATA_CONTACT_TELEPHONE = 0,
+    DATA_CONTACT_EMAIL = 1
+}DATA_CONTACT;
+
 @protocol SMContactsSelectorDelegate <NSObject>
-@required
+@optional
 
 - (void)numberOfRowsSelected:(NSInteger)numberRows withTelephones:(NSArray *)telephones;
+- (void)numberOfRowsSelected:(NSInteger)numberRows withEmails:(NSArray *)emails;
 
 @end
 
@@ -25,7 +32,7 @@
 {
 
 	id delegate;
-	BOOL wantEmail;
+	DATA_CONTACT requestData;
     
 @private
     
@@ -44,6 +51,7 @@
     NSMutableDictionary *selectedItem;
     AlertTableView *alertTable;
     NSInteger savedScopeButtonIndex;
+    NSString *alertTitle;
 }
 
 - (void)dismiss;
@@ -63,6 +71,7 @@
 @property (nonatomic) BOOL searchWasActive;
 @property (nonatomic, retain) AlertTableView *alertTable;
 @property (nonatomic, retain) UITableView *currentTable;
-@property (nonatomic) BOOL wantEmail;
+@property (nonatomic) DATA_CONTACT requestData;
+@property (nonatomic, retain) NSString *alertTitle;
 
 @end

@@ -1,1 +1,24 @@
-This is a fully customizable control to select data in a list (i.e. Telephone numbers) like the Whatsapp application. Supports multiselection + English and Spanish. It's Easy to use and customizable
+This is a fully customizable control to select data in a list (i.e. Telephone numbers) like the Whatsapp application. Supports multiselection + English and Spanish. It's Easy to use and customizable.
+
+Example:
+
+<pre>
+
+    SMContactsSelector *controller = [[SMContactsSelector alloc] initWithNibName:@"SMContactsSelector" bundle:nil];
+    controller.delegate = self;
+    controller.requestData = DATA_CONTACT_EMAIL; //DATA_CONTACT_TELEPHONE
+    [self presentModalViewController:controller animated:YES];
+    [controller release];
+
+</pre>
+
+This control implements two delegate methods:
+
+<pre>
+
+- (void)numberOfRowsSelected:(NSInteger)numberRows withTelephones:(NSArray *)telephones
+- (void)numberOfRowsSelected:(NSInteger)numberRows withEmails:(NSArray *)emails
+
+</pre>
+
+Each method gives you a response when you retrieve one or more telephones/email.

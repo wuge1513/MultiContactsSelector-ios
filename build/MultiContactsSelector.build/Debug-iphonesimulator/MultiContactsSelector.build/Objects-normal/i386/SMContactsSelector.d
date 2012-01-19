@@ -9,4 +9,5 @@ dependencies: \
   /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJsonWriter.h \
   /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSObject+SBJSON.h \
   /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSString+SBJSON.h \
+  /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/Address+Additions.h \
   /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/UIAlertView+UITableView.h

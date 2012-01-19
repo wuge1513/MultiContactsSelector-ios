@@ -86,6 +86,8 @@
 
 - (BOOL)isLetter;
 
+- (BOOL)isRecordInArray:(NSArray *)array;
+
 @end
 
 @implementation NSString (character)
@@ -107,6 +109,19 @@
 	return isLetter;
 }
 
+- (BOOL)isRecordInArray:(NSArray *)array
+{
+    for (NSString *str in array)
+    {
+        if ([self isEqualToString:str]) 
+        {
+            return YES;
+        }
+    }
+    
+    return NO;
+}
+
 @end
 
 @implementation SMContactsSelector
@@ -126,18 +141,21 @@
 @synthesize arrayLetters;
 @synthesize requestData;
 @synthesize alertTitle;
+@synthesize recordIDs;
 
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
 	
-    if ((requestData != DATA_CONTACT_TELEPHONE) && (requestData != DATA_CONTACT_EMAIL))
+    if ((requestData != DATA_CONTACT_TELEPHONE) && 
+        (requestData != DATA_CONTACT_EMAIL) &&
+        (requestData != DATA_CONTACT_ID))
     {
         [self.navigationController dismissModalViewControllerAnimated:YES];
         
         @throw ([NSException exceptionWithName:@"Undefined data request"
-                                reason:@"Define requestData variable (EMAIL or TELEPHONE)" 
-                              userInfo:nil]);
+                                        reason:@"Define requestData variable (EMAIL or TELEPHONE)" 
+                                      userInfo:nil]);
     }
     
     NSString *currentLanguage = [[[[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"] objectAtIndex:0] lowercaseString];
@@ -151,17 +169,16 @@
 		arrayLetters = [[[NSArray spanishAlphabet] createList] retain];
         cancelItem.title = @"Cancelar";
         doneItem.title = @"Hecho";
-            alertTitle = @"Selecciona";
+        alertTitle = @"Selecciona";
 	}
 	else
 	{
 		arrayLetters = [[[NSArray englishAlphabet] createList] retain];
         cancelItem.title = @"Cancel";
         doneItem.title = @"Done";
-        
-            alertTitle = @"Select";
+        alertTitle = @"Select";
 	}
-
+    
 	cancelItem.action = @selector(dismiss);
 	doneItem.action = @selector(acceptAction);
 	
@@ -192,9 +209,9 @@
 				objs = [objs stringByAppendingString:[NSString stringWithFormat:@",%@", [propertyArray objectAtIndex:i]]];
 			}
 		}
-    
+        
 		[propertyArray release];
-
+        
 		CFStringRef name;
         name = ABRecordCopyValue(person, kABPersonFirstNameProperty);
         CFStringRef lastNameString;
@@ -204,12 +221,13 @@
         
 		NSString *nameString = (NSString *)name;
 		NSString *lastName = (NSString *)lastNameString;
+        int currentID = (int)ABRecordGetRecordID(person);
         
         if ((id)lastNameString != nil)
         {
             nameString = [NSString stringWithFormat:@"%@ %@", nameString, lastName];
         }
-
+        
         NSMutableDictionary *info = [NSMutableDictionary new];
         [info setValue:[NSString stringWithFormat:@"%@", [[nameString stringByReplacingOccurrencesOfString:@" " withString:@""] substringFrom:0 to:1]] forKey:@"letter"];
         [info setValue:[NSString stringWithFormat:@"%@", nameString] forKey:@"name"];
@@ -230,7 +248,8 @@
                     [info setValue:@"" forKey:@"emailSelected"];
                 }
             }
-            else
+            
+            if (requestData == DATA_CONTACT_TELEPHONE)
             {
                 [info setValue:[NSString stringWithFormat:@"%@", objs] forKey:@"telephone"];
                 
@@ -243,18 +262,35 @@
                     [info setValue:@"" forKey:@"telephoneSelected"];
                 }
             }
+            
+            if (requestData == DATA_CONTACT_ID) 
+            {
+                [info setValue:[NSString stringWithFormat:@"%d", currentID] forKey:@"recordID"];
+                
+                [info setValue:@"" forKey:@"recordIDSelected"];
+            }
 		}
         
-        [dataArray addObject:info];
-        [info release];
+        if ([recordIDs count] > 0) 
+        {
+            BOOL insert = ([[NSString stringWithFormat:@"%d", currentID] isRecordInArray:recordIDs]);
+            
+            if (insert)
+            {
+                [dataArray addObject:info];
+            }
+        }
+        else
+            [dataArray addObject:info];
         
+        [info release];
         if (name) CFRelease(name);
         if (lastNameString) CFRelease(lastNameString);
 	}
 	
 	CFRelease(allPeople);
 	CFRelease(addressBook);
-
+    
 	NSSortDescriptor *sortDescriptor;
 	sortDescriptor = [[[NSSortDescriptor alloc] initWithKey:@"name"
 												  ascending:YES] autorelease];
@@ -311,7 +347,7 @@
 		[info setValue:array forKey:@"#"];
 		[array release];
 	}
-
+    
 	dataArray = [[NSMutableArray alloc] initWithObjects:info, nil];
 	self.filteredListContent = [NSMutableArray arrayWithCapacity:[data count]];
 	[self.searchDisplayController.searchBar setShowsCancelButton:NO];
@@ -324,7 +360,6 @@
 - (void)acceptAction
 {
 	NSMutableArray *objects = [NSMutableArray new];
-	//NSMutableArray *emails = [NSMutableArray new];
     
 	for (int i = 0; i < [arrayLetters count]; i++)
 	{
@@ -334,25 +369,46 @@
 		{
 			NSMutableDictionary *item = (NSMutableDictionary *)[obj objectAtIndex:x];
 			BOOL checked = [[item objectForKey:@"checked"] boolValue];
-			
+            
 			if (checked)
 			{
-				(requestData == DATA_CONTACT_TELEPHONE) ? [objects addObject:[item valueForKey:@"telephoneSelected"]] : [objects addObject:[item valueForKey:@"emailSelected"]];
+                NSString *str = @"";
+                
+				if (requestData == DATA_CONTACT_TELEPHONE) 
+                {
+                    str = [item valueForKey:@"telephoneSelected"];
+                    
+                    if (![str isEqualToString:@""]) 
+                    {
+                        [objects addObject:str];
+                    }
+                }
+                else if (requestData == DATA_CONTACT_EMAIL)
+                {
+                    str = [item valueForKey:@"emailSelected"];
+                    
+                    if (![str isEqualToString:@""]) 
+                    {
+                        [objects addObject:str];
+                    }
+                }
+                else
+                {
+                    str = [item valueForKey:@"recordID"];
+                    
+                    if (![str isEqualToString:@""]) 
+                    {
+                        [objects addObject:str];
+                    }
+                }
 			}
 		}
 	}
-	
-    if (requestData == DATA_CONTACT_TELEPHONE)
-    {
-        if ([self.delegate respondsToSelector:@selector(numberOfRowsSelected:withTelephones:)]) 
-            [self.delegate numberOfRowsSelected:[objects count] withTelephones:objects];
-    }
-	else
-    {
-        if ([self.delegate respondsToSelector:@selector(numberOfRowsSelected:withEmails:)]) 
-            [self.delegate numberOfRowsSelected:[objects count] withEmails:objects];
-    }
-
+    
+    if ([self.delegate respondsToSelector:@selector(numberOfRowsSelected:withData:andDataType:)]) 
+        [self.delegate numberOfRowsSelected:[objects count] withData:objects andDataType:requestData];
+    
+    
 	[objects release];
 	[self dismiss];
 }
@@ -399,7 +455,7 @@
 		
 		item = (NSMutableDictionary *)[obj objectAtIndex:indexPath.row];
 	}
-
+    
 	cell.textLabel.text = [item objectForKey:@"name"];
 	cell.textLabel.adjustsFontSizeToFitWidth = YES;
     
@@ -418,7 +474,7 @@
 	}
 	
 	[button setBackgroundImage:image forState:UIControlStateNormal];
-
+    
 	[button addTarget:self action:@selector(checkButtonTapped:event:) forControlEvents:UIControlEventTouchUpInside];
 	cell.backgroundColor = [UIColor clearColor];
 	cell.accessoryView = button;
@@ -452,10 +508,18 @@
 		NSMutableArray *obj = [[dataArray objectAtIndex:0] valueForKey:[arrayLetters objectAtIndex:indexPath.section]];
 		item = (NSMutableDictionary *)[obj objectAtIndex:indexPath.row];
 	}
-	
-    NSArray *objectsArray = (NSArray *)[[item valueForKey:(requestData == DATA_CONTACT_TELEPHONE) ? @"telephone" : @"email"] componentsSeparatedByString:@","];
+    
+    NSArray *objectsArray = nil;
+    
+    if (requestData == DATA_CONTACT_TELEPHONE)
+        objectsArray = (NSArray *)[[item valueForKey:@"telephone"] componentsSeparatedByString:@","];
+    else if (requestData == DATA_CONTACT_EMAIL)
+        objectsArray = (NSArray *)[[item valueForKey:@"email"] componentsSeparatedByString:@","];
+    else
+        objectsArray = (NSArray *)[[item valueForKey:@"recordID"] componentsSeparatedByString:@","];
+    
     int objectsCount = [objectsArray count];
-
+    
     if (objectsCount > 1)
     {
         selectedItem = item;
@@ -464,11 +528,11 @@
         alertTable = [[AlertTableView alloc] initWithCaller:self 
                                                        data:objectsArray 
                                                       title:alertTitle
-                                                 context:self
-                                              dictionary:item
-                                                 section:indexPath.section
-                                                     row:indexPath.row];
-
+                                                    context:self
+                                                 dictionary:item
+                                                    section:indexPath.section
+                                                        row:indexPath.row];
+        
         [alertTable show];
         [alertTable release];
     }
@@ -491,6 +555,9 @@
         }
     }
 }
+
+#pragma mark
+#pragma mark AlertTableViewDelegate delegate method
 
 - (void)didSelectRowAtIndex:(NSInteger)row 
                     section:(NSInteger)section
@@ -555,7 +622,7 @@
 	NSString *sectionString = [arrayLetters objectAtIndex:section];
 	
 	NSArray *array = (NSArray *)[[dataArray objectAtIndex:0] valueForKey:sectionString];
-
+    
 	for (NSDictionary *dict in array)
 	{
 		NSString *name = [dict valueForKey:@"name"];
@@ -643,7 +710,7 @@
 		for (int x = 0; x < [obj count]; x++)
 		{
 			NSMutableDictionary *item = (NSMutableDictionary *)[obj objectAtIndex:x];
-
+            
 			if (yesOrNO)
 			{
 				for (NSDictionary *d in selected)
@@ -694,7 +761,7 @@
 - (void)filterContentForSearchText:(NSString *)searchText scope:(NSString*)scope
 {
 	[self.filteredListContent removeAllObjects];
-
+    
 	for (int i = 0; i < [arrayLetters count]; i++)
 	{
 		NSMutableArray *obj = [[dataArray objectAtIndex:0] valueForKey:[arrayLetters objectAtIndex:i]];

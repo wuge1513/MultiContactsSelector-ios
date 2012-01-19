@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B59C80A614C81029006991E5 /* Address+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = B59C80A514C81029006991E5 /* Address+Additions.m */; };
 		B5B8238A145693AF005E1871 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B82389145693AF005E1871 /* UIKit.framework */; };
 		B5B8238C145693AF005E1871 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B8238B145693AF005E1871 /* Foundation.framework */; };
 		B5B8238E145693AF005E1871 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B8238D145693AF005E1871 /* CoreGraphics.framework */; };
@@ -32,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B59C80A414C81029006991E5 /* Address+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Address+Additions.h"; sourceTree = "<group>"; };
+		B59C80A514C81029006991E5 /* Address+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Address+Additions.m"; sourceTree = "<group>"; };
 		B5B82385145693AF005E1871 /* MultiContactsSelector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiContactsSelector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B82389145693AF005E1871 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B5B8238B145693AF005E1871 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -160,6 +163,8 @@
 				B5B823B2145694C6005E1871 /* JSON */,
 				B5B823AE1456949A005E1871 /* NSString+Additions.h */,
 				B5B823AF1456949A005E1871 /* NSString+Additions.m */,
+				B59C80A414C81029006991E5 /* Address+Additions.h */,
+				B59C80A514C81029006991E5 /* Address+Additions.m */,
 			);
 			name = Additions;
 			sourceTree = "<group>";
@@ -279,6 +284,7 @@
 				B5B823C4145694D2005E1871 /* SBJsonParser.m in Sources */,
 				B5B823C5145694D2005E1871 /* SBJsonWriter.m in Sources */,
 				B5B823C914569500005E1871 /* UIAlertView+UITableView.m in Sources */,
+				B59C80A614C81029006991E5 /* Address+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

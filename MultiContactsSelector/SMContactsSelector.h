@@ -10,19 +10,20 @@
 #import <AddressBook/AddressBook.h>
 #import <AddressBookUI/AddressBookUI.h>
 #import "NSString+Additions.h"
+#import "Address+Additions.h"
 #import "UIAlertView+UITableView.h"
 
 typedef enum 
 {
     DATA_CONTACT_TELEPHONE = 0,
-    DATA_CONTACT_EMAIL = 1
+    DATA_CONTACT_EMAIL = 1,
+    DATA_CONTACT_ID = 2
 }DATA_CONTACT;
 
 @protocol SMContactsSelectorDelegate <NSObject>
 @optional
 
-- (void)numberOfRowsSelected:(NSInteger)numberRows withTelephones:(NSArray *)telephones;
-- (void)numberOfRowsSelected:(NSInteger)numberRows withEmails:(NSArray *)emails;
+- (void)numberOfRowsSelected:(NSInteger)numberRows withData:(NSArray *)data andDataType:(DATA_CONTACT)type;
 
 @end
 
@@ -30,9 +31,10 @@ typedef enum
 
 @interface SMContactsSelector : UIViewController <UITableViewDataSource, UITableViewDelegate, UISearchDisplayDelegate, UISearchBarDelegate, AlertTableViewDelegate>
 {
-
+    
 	id delegate;
 	DATA_CONTACT requestData;
+    NSArray *recordIDs;
     
 @private
     
@@ -73,5 +75,6 @@ typedef enum
 @property (nonatomic, retain) UITableView *currentTable;
 @property (nonatomic) DATA_CONTACT requestData;
 @property (nonatomic, retain) NSString *alertTitle;
+@property (nonatomic, retain) NSArray *recordIDs;
 
 @end

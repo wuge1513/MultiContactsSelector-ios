@@ -29,6 +29,9 @@
 {
     [super viewDidLoad];
     
+    NSLog(@"%@", [NSObject getAllRecordIDs]);
+    //NSLog(@"%@", [NSObject infoWithRecordID:1]);
+    
     UIButton *showContacts = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     showContacts.frame = CGRectMake(80, 100, 150, 50);
     [showContacts addTarget:self action:@selector(showContacts) forControlEvents:UIControlEventTouchUpInside];
@@ -41,7 +44,11 @@
 {
     SMContactsSelector *controller = [[SMContactsSelector alloc] initWithNibName:@"SMContactsSelector" bundle:nil];
     controller.delegate = self;
-    controller.requestData = DATA_CONTACT_EMAIL; //DATA_CONTACT_TELEPHONE
+    controller.requestData = DATA_CONTACT_ID; //DATA_CONTACT_EMAIL
+    
+    // Set your contact list setting record ids
+    controller.recordIDs = [NSArray arrayWithObjects:@"1", @"2", nil];
+    
     [self presentModalViewController:controller animated:YES];
     [controller release];
 }
@@ -49,26 +56,37 @@
 #pragma -
 #pragma SMContactsSelectorDelegate Methods
 
-- (void)numberOfRowsSelected:(NSInteger)numberRows withTelephones:(NSArray *)telephones
+- (void)numberOfRowsSelected:(NSInteger)numberRows withData:(NSArray *)data andDataType:(DATA_CONTACT)type
 {
-	for (int i = 0; i < [telephones count]; i++)
-	{
-		NSString *str = [telephones objectAtIndex:i];
-		
-        str = [str reformatTelephone];
-		
-		NSLog(@"Telephone: %@", str);		
-	}
-}
-
-- (void)numberOfRowsSelected:(NSInteger)numberRows withEmails:(NSArray *)emails
-{
-    for (int i = 0; i < [emails count]; i++)
-	{
-		NSString *str = [emails objectAtIndex:i];
-
-		NSLog(@"Emails: %@", str);		
-	}
+    if (type == DATA_CONTACT_TELEPHONE)
+    {
+        for (int i = 0; i < [data count]; i++)
+        {
+            NSString *str = [data objectAtIndex:i];
+            
+            str = [str reformatTelephone];
+            
+            NSLog(@"Telephone: %@", str);		
+        }
+    }
+    else if (type == DATA_CONTACT_EMAIL)
+    {
+        for (int i = 0; i < [data count]; i++)
+        {
+            NSString *str = [data objectAtIndex:i];
+            
+            NSLog(@"Emails: %@", str);		
+        }
+    }
+	else
+    {
+        for (int i = 0; i < [data count]; i++)
+        {
+            NSString *str = [data objectAtIndex:i];
+            
+            NSLog(@"IDs: %@", str);		
+        } 
+    }
 }
 
 @end

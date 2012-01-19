@@ -26,41 +26,4 @@ This control implements one delegate methods:
 
 </pre>
 
-Loop over delegate method to parse each kind of data:
-
-<pre>
-
-- (void)numberOfRowsSelected:(NSInteger)numberRows withData:(NSArray *)data andDataType:(DATA_CONTACT)type
-{
-    if (type == DATA_CONTACT_TELEPHONE)
-    {
-        for (int i = 0; i < [data count]; i++)
-        {
-            NSString *str = [data objectAtIndex:i];
-            
-            str = [str reformatTelephone];
-            
-            NSLog(@"Telephone: %@", str);		
-        }
-    }
-    else if (type == DATA_CONTACT_EMAIL)
-    {
-        for (int i = 0; i < [data count]; i++)
-        {
-            NSString *str = [data objectAtIndex:i];
-            
-            NSLog(@"Emails: %@", str);		
-        }
-    }
-    else
-    {
-        for (int i = 0; i < [data count]; i++)
-        {
-            NSString *str = [data objectAtIndex:i];
-            
-            NSLog(@"IDs: %@", str);		
-        } 
-    }
-}
-
-</pre>
+Loop over delegate method to parse each kind of data.

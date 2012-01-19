@@ -29,7 +29,8 @@
 {
     [super viewDidLoad];
     
-    NSLog(@"%@", [NSObject getAllRecordIDs]);
+    // Addressbook Utilities
+    //NSLog(@"%@", [NSObject getAllRecordIDs]);
     //NSLog(@"%@", [NSObject infoWithRecordID:1]);
     
     UIButton *showContacts = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -44,9 +45,9 @@
 {
     SMContactsSelector *controller = [[SMContactsSelector alloc] initWithNibName:@"SMContactsSelector" bundle:nil];
     controller.delegate = self;
-    controller.requestData = DATA_CONTACT_ID; //DATA_CONTACT_EMAIL
+    controller.requestData = DATA_CONTACT_ID; //DATA_CONTACT_EMAIL , DATA_CONTACT_TELEPHONE
     
-    // Set your contact list setting record ids
+    // Set your contact list setting record ids (optional)
     controller.recordIDs = [NSArray arrayWithObjects:@"1", @"2", nil];
     
     [self presentModalViewController:controller animated:YES];

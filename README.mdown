@@ -6,19 +6,61 @@ Example:
 
     SMContactsSelector *controller = [[SMContactsSelector alloc] initWithNibName:@"SMContactsSelector" bundle:nil];
     controller.delegate = self;
-    controller.requestData = DATA_CONTACT_EMAIL; //DATA_CONTACT_TELEPHONE
+
+    // Select your returned data type
+    controller.requestData = DATA_CONTACT_ID; //DATA_CONTACT_EMAIL , DATA_CONTACT_TELEPHONE
+    
+    // Set your contact list setting record ids (optional)
+    controller.recordIDs = [NSArray arrayWithObjects:@"1", @"2", nil];
+    
     [self presentModalViewController:controller animated:YES];
     [controller release];
 
 </pre>
 
-This control implements two delegate methods:
+This control implements one delegate methods:
 
 <pre>
 
-- (void)numberOfRowsSelected:(NSInteger)numberRows withTelephones:(NSArray *)telephones
-- (void)numberOfRowsSelected:(NSInteger)numberRows withEmails:(NSArray *)emails
+- (void)numberOfRowsSelected:(NSInteger)numberRows withData:(NSArray *)data andDataType:(DATA_CONTACT)type;
 
 </pre>
 
-Each method gives you a response when you retrieve one or more telephones/email.
+Loop over delegate method to parse each kind of data:
+
+<pre>
+
+- (void)numberOfRowsSelected:(NSInteger)numberRows withData:(NSArray *)data andDataType:(DATA_CONTACT)type
+{
+    if (type == DATA_CONTACT_TELEPHONE)
+    {
+        for (int i = 0; i < [data count]; i++)
+        {
+            NSString *str = [data objectAtIndex:i];
+            
+            str = [str reformatTelephone];
+            
+            NSLog(@"Telephone: %@", str);		
+        }
+    }
+    else if (type == DATA_CONTACT_EMAIL)
+    {
+        for (int i = 0; i < [data count]; i++)
+        {
+            NSString *str = [data objectAtIndex:i];
+            
+            NSLog(@"Emails: %@", str);		
+        }
+    }
+    else
+    {
+        for (int i = 0; i < [data count]; i++)
+        {
+            NSString *str = [data objectAtIndex:i];
+            
+            NSLog(@"IDs: %@", str);		
+        } 
+    }
+}
+
+</pre>

@@ -21,7 +21,7 @@ typedef enum
 }DATA_CONTACT;
 
 @protocol SMContactsSelectorDelegate <NSObject>
-@optional
+@required
 
 - (void)numberOfRowsSelected:(NSInteger)numberRows withData:(NSArray *)data andDataType:(DATA_CONTACT)type;
 

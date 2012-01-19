@@ -18,7 +18,7 @@
 		B5B823A8145693E2005E1871 /* SMContactsSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B823A7145693E2005E1871 /* SMContactsSelector.m */; };
 		B5B823AA1456941D005E1871 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B823A91456941D005E1871 /* AddressBook.framework */; };
 		B5B823AC14569429005E1871 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B823AB14569429005E1871 /* AddressBookUI.framework */; };
-		B5B823B01456949A005E1871 /* NSString+Additions.h.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B823AF1456949A005E1871 /* NSString+Additions.h.m */; };
+		B5B823B01456949A005E1871 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B823AF1456949A005E1871 /* NSString+Additions.m */; };
 		B5B823C0145694D2005E1871 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B823B5145694D2005E1871 /* NSObject+SBJSON.m */; };
 		B5B823C1145694D2005E1871 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B823B7145694D2005E1871 /* NSString+SBJSON.m */; };
 		B5B823C2145694D2005E1871 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B823B9145694D2005E1871 /* SBJSON.m */; };
@@ -49,8 +49,8 @@
 		B5B823A7145693E2005E1871 /* SMContactsSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMContactsSelector.m; sourceTree = "<group>"; };
 		B5B823A91456941D005E1871 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		B5B823AB14569429005E1871 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
-		B5B823AE1456949A005E1871 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; path = "NSString+Additions.h"; sourceTree = "<group>"; };
-		B5B823AF1456949A005E1871 /* NSString+Additions.h.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.h.m"; sourceTree = "<group>"; };
+		B5B823AE1456949A005E1871 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		B5B823AF1456949A005E1871 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
 		B5B823B3145694D2005E1871 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		B5B823B4145694D2005E1871 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
 		B5B823B5145694D2005E1871 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 			children = (
 				B5B823B2145694C6005E1871 /* JSON */,
 				B5B823AE1456949A005E1871 /* NSString+Additions.h */,
-				B5B823AF1456949A005E1871 /* NSString+Additions.h.m */,
+				B5B823AF1456949A005E1871 /* NSString+Additions.m */,
 			);
 			name = Additions;
 			sourceTree = "<group>";
@@ -271,7 +271,7 @@
 				B5B8239A145693AF005E1871 /* AppDelegate.m in Sources */,
 				B5B8239D145693AF005E1871 /* ViewController.m in Sources */,
 				B5B823A8145693E2005E1871 /* SMContactsSelector.m in Sources */,
-				B5B823B01456949A005E1871 /* NSString+Additions.h.m in Sources */,
+				B5B823B01456949A005E1871 /* NSString+Additions.m in Sources */,
 				B5B823C0145694D2005E1871 /* NSObject+SBJSON.m in Sources */,
 				B5B823C1145694D2005E1871 /* NSString+SBJSON.m in Sources */,
 				B5B823C2145694D2005E1871 /* SBJSON.m in Sources */,
@@ -388,6 +388,7 @@
 				B5B823A5145693AF005E1871 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

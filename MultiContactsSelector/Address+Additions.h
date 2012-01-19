@@ -2,8 +2,8 @@
 //  Address+Additions.h
 //  MultiContactsSelector
 //
-//  Created by macpocket1 on 19/01/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Sergio on 19/01/12.
+//  Copyright (c) 2012 Sergio. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

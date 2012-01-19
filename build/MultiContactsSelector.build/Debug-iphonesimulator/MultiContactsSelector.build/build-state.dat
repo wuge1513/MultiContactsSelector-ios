@@ -4,11 +4,11 @@ r1
 cCheck dependencies
 cProcessInfoPlistFile /Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/Info.plist MultiContactsSelector/MultiContactsSelector-Info.plist
 cProcessPCH /var/folders/st/strMJA7BGFCR09fb9peT7k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-fmdsyurfjvsevygowhhciwkgatri/MultiContactsSelector-Prefix.pch.pth MultiContactsSelector/MultiContactsSelector-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/ViewController.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+Additions.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSString+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/main.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/AppDelegate.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/ViewController.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SMContactsSelector.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+Additions.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSString+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSObject+SBJSON.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+SBJSON.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJSON.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -222,11 +222,11 @@ t1326962728
 s1553
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app
-t1326962894
+t1326963271
 s306
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app.dSYM
-t1326962893
+t1326963271
 s102
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/Info.plist
@@ -234,7 +234,7 @@ t1326962728
 s889
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/MultiContactsSelector
-t1326962893
+t1326963270
 s133948
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/PkgInfo
@@ -266,7 +266,7 @@ t1326962892
 s5320
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/AppDelegate.o
-t1326962892
+t1326963270
 s52416
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/MultiContactsSelector.LinkFileList
@@ -307,7 +307,7 @@ t1326962893
 s24088
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SMContactsSelector.o
-t1326962893
+t1326963270
 s138236
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/UIAlertView+UITableView.o
@@ -315,8 +315,8 @@ t1326962893
 s70616
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/ViewController.o
-t1326962892
-s53640
+t1326963270
+s53368
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/main.o
 t1326962892
@@ -375,7 +375,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies1ff3f9c511c8b441^3257fac511c8b441^---0#1#0#--18"Check dependencies36"9B3B791C-BC2C-4B49-90FE-1DD8AAEA207A-
+lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies96b03eb412c8b441^4ca848b412c8b441^---0#1#0#--18"Check dependencies36"6933E057-2E5C-473D-9CBE-ED93C3AE3A43-
 
 CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/Address+Additions.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/Address+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s348655692.717723

@@ -99,7 +99,7 @@
 	
 	for (int i = 0; i < [letters count]; i++)
 	{
-		if ([[[self substringFrom:0 to:1] uppercaseString] isEqualToString:[letters objectAtIndex:i]]) 
+		if ([[[self substringToIndex:1] uppercaseString] isEqualToString:[letters objectAtIndex:i]]) 
 		{
 			isLetter = YES;
 			break;
@@ -229,11 +229,11 @@
         }
         
         NSMutableDictionary *info = [NSMutableDictionary new];
-        [info setValue:[NSString stringWithFormat:@"%@", [[nameString stringByReplacingOccurrencesOfString:@" " withString:@""] substringFrom:0 to:1]] forKey:@"letter"];
+        [info setValue:[NSString stringWithFormat:@"%@", [[nameString stringByReplacingOccurrencesOfString:@" " withString:@""] substringToIndex:1]] forKey:@"letter"];
         [info setValue:[NSString stringWithFormat:@"%@", nameString] forKey:@"name"];
         [info setValue:@"-1" forKey:@"rowSelected"];
         
-        if ((objs != @"") || (![[objs lowercaseString] containsString:@"null"]))
+        if ((objs != @"") || ([[objs lowercaseString] rangeOfString:@"null"].location == NSNotFound))
 		{
             if (requestData == DATA_CONTACT_EMAIL) 
             {
@@ -319,7 +319,7 @@
 			NSString *name = [dict valueForKey:@"name"];
 			name = [name stringByReplacingOccurrencesOfString:@" " withString:@""];
 			
-			if ([[[name substringFrom:0 to:1] uppercaseString] isEqualToString:[arrayLetters objectAtIndex:i]]) 
+			if ([[[name substringToIndex:1] uppercaseString] isEqualToString:[arrayLetters objectAtIndex:i]]) 
 			{
 				[array addObject:dict];
 			}
@@ -634,7 +634,7 @@
 		}
 		else
 		{
-			if ([[[name substringFrom:0 to:1] uppercaseString] isEqualToString:[arrayLetters objectAtIndex:section]]) 
+			if ([[[name substringToIndex:1] uppercaseString] isEqualToString:[arrayLetters objectAtIndex:section]]) 
 			{
 				i++;
 			}

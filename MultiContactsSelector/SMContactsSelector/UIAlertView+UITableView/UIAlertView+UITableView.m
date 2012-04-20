@@ -7,12 +7,14 @@
 //
 
 #import "UIAlertView+UITableView.h"
+#import "NSString+Additions.h"
 
 @implementation AlertTableView
 @synthesize  caller, context, data;
 @synthesize itemValue;
 @synthesize sectionSelected;
 @synthesize selectedRow;
+@synthesize isModal;
 
 - (id)initWithCaller:(id<AlertTableViewDelegate>)_caller
                 data:(NSArray*)_data
@@ -39,19 +41,54 @@
         tableHeight = 207;
     }
     
-    if ((self = [super initWithTitle:_title
-                             message:messageString
-                            delegate:self 
-                   cancelButtonTitle:nil
-                   otherButtonTitles:NSLocalizedString(@"cancel", @""), NSLocalizedString(@"uncheckItem", @""), nil]))
+    NSString * language = [[NSLocale preferredLanguages] objectAtIndex:0];
+    
+    NSString *cancelString = @"";
+    NSString *uncheck = @"";
+    
+    if ([language containsString:@"es"])
     {
-        self.caller = _caller;
-        self.context = _context;
-        self.data = _data;
-        self.itemValue = item;
-        self.sectionSelected = section;
-        self.selectedRow = row;
-        [self prepare];
+        cancelString = @"Cancelar";
+        uncheck = @"Desmarcar";
+    }
+    else
+    {
+        cancelString = @"Cancel";
+        uncheck = @"Uncheck";
+    }
+    if (isModal)
+    {
+        if ((self = [super initWithTitle:_title
+                                 message:messageString
+                                delegate:self 
+                       cancelButtonTitle:nil
+                       otherButtonTitles:cancelString, uncheck, nil]))
+        {
+            self.caller = _caller;
+            self.context = _context;
+            self.data = _data;
+            self.itemValue = item;
+            self.sectionSelected = section;
+            self.selectedRow = row;
+            [self prepare];
+        }
+    }
+    else 
+    {
+        if ((self = [super initWithTitle:_title
+                                 message:messageString
+                                delegate:self 
+                       cancelButtonTitle:nil
+                       otherButtonTitles:cancelString, nil]))
+        {
+            self.caller = _caller;
+            self.context = _context;
+            self.data = _data;
+            self.itemValue = item;
+            self.sectionSelected = section;
+            self.selectedRow = row;
+            [self prepare];
+        }
     }
     
     return self;
@@ -127,7 +164,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = (UITableViewCell*) [tableView dequeueReusableCellWithIdentifier:@"ABC"];
-
+    
     if (cell == nil)
     {
         //cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"ABC"] autorelease];
@@ -161,9 +198,9 @@
         [self.caller didSelectRowAtIndex:indexPath.row 
                                  section:self.sectionSelected 
                              withContext:self.context
-                                 text:cell.textLabel.text
-                              andItem:itemValue
-                                  row:self.selectedRow];
+                                    text:cell.textLabel.text
+                                 andItem:itemValue
+                                     row:self.selectedRow];
     }
 }
 

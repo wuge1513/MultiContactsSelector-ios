@@ -29,6 +29,7 @@
     int sectionSelected;
     int selectedRow;
 	int tableHeight;
+    BOOL isModal;
 }
 
 - (id)initWithCaller:(id<AlertTableViewDelegate>)_caller
@@ -45,6 +46,7 @@
 @property(nonatomic, retain) NSMutableDictionary *itemValue;
 @property(nonatomic) int sectionSelected;
 @property(nonatomic) int selectedRow;
+@property(nonatomic) BOOL isModal;
 
 @end
 

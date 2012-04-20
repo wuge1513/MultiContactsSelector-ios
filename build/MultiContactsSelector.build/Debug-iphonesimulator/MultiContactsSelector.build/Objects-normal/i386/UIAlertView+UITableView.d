@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/UIAlertView+UITableView.m \
-  /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/UIAlertView+UITableView.h
+  /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/UIAlertView+UITableView/UIAlertView+UITableView.m \
+  /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/UIAlertView+UITableView/UIAlertView+UITableView.h

@@ -1,30 +1,60 @@
 TMultiContactsSelector
-v4
+v5
 r1
 cCheck dependencies
-cProcessInfoPlistFile /Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/Info.plist MultiContactsSelector/MultiContactsSelector-Info.plist
-cProcessPCH /var/folders/st/strMJA7BGFCR09fb9peT7k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-fmdsyurfjvsevygowhhciwkgatri/MultiContactsSelector-Prefix.pch.pth MultiContactsSelector/MultiContactsSelector-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/ViewController.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+Additions.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSString+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/main.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/AppDelegate.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SMContactsSelector.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSObject+SBJSON.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+SBJSON.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJSON.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonBase.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJsonBase.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonParser.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJsonParser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonWriter.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJsonWriter.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/UIAlertView+UITableView.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/UIAlertView+UITableView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/Address+Additions.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/Address+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/MultiContactsSelector normal i386
-cGenerateDSYMFile /Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app.dSYM /Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/MultiContactsSelector
-cCopyStringsFile /Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/en.lproj/InfoPlist.strings MultiContactsSelector/en.lproj/InfoPlist.strings
-cCompileXIB /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/en.lproj/ViewController.xib
-cCompileXIB /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector.xib
-cCpResource MultiContactsSelector/checked.png build/Debug-iphonesimulator/MultiContactsSelector.app/checked.png
-cCpResource MultiContactsSelector/unchecked.png build/Debug-iphonesimulator/MultiContactsSelector.app/unchecked.png
-cTouch /Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app
+cProcessInfoPlistFile /Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/Info.plist MultiContactsSelector/MultiContactsSelector-Info.plist
+cProcessPCH /var/folders/jz/x1_qydqd0_37csvhjbynhrqc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-gfmqibdtdruaszeiuymkhtnekmds/MultiContactsSelector-Prefix.pch.pth MultiContactsSelector/MultiContactsSelector-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/main.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/AppDelegate.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/ViewController.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/Address+Additions.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/Additions/Address+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+Additions.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/Additions/NSString+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSObject+SBJSON.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+SBJSON.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJSON.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonBase.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonBase.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonParser.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonParser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonWriter.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonWriter.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SMContactsSelector.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/SMContactsSelector.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/UIAlertView+UITableView.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/UIAlertView+UITableView/UIAlertView+UITableView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/MultiContactsSelector normal i386
+cGenerateDSYMFile /Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app.dSYM /Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/MultiContactsSelector
+cCopyStringsFile /Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/en.lproj/InfoPlist.strings MultiContactsSelector/en.lproj/InfoPlist.strings
+cCompileXIB /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/en.lproj/ViewController.xib
+cCpResource MultiContactsSelector/SMContactsSelector/Images/checked.png build/Debug-iphonesimulator/MultiContactsSelector.app/checked.png
+cCpResource MultiContactsSelector/SMContactsSelector/Images/unchecked.png build/Debug-iphonesimulator/MultiContactsSelector.app/unchecked.png
+cCompileXIB /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/SMContactsSelector.xib
+cTouch /Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk
+c000000004F453DF80000000000000110
+t1329937912
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/AddressBook.framework/AddressBook
+c000000004F71BDDD0000000000095860
+t1332854237
+s612448
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/AddressBookUI.framework/AddressBookUI
+c000000004F71BDDE0000000000169880
+t1332854238
+s1480832
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004F71BDE00000000000244490
+t1332854240
+s2376848
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004F71BDE80000000000353830
+t1332854248
+s3487792
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004F71BE400000000000905E40
+t1332854336
+s9461312
 
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk
 c000000004EA506D60000000000000110
@@ -57,9 +87,9 @@ t1316488875
 s9401232
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/Address+Additions.h
-c000000004F17C64A0000000000000163
-t1326958154
-s355
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/Address+Additions.m
 c000000004F17C635000000000000054F
@@ -67,19 +97,19 @@ t1326958133
 s1359
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/AppDelegate.h
-c000000004F17D8280000000000000171
-t1326962728
-s369
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/AppDelegate.m
-c000000004F17D8280000000000000A14
-t1326962728
-s2580
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/JSON.h
-c000000004F17D82800000000000008F9
-t1326962728
-s2297
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/MultiContactsSelector-Prefix.pch
 c000000004F17D8280000000000000159
@@ -87,19 +117,19 @@ t1326962728
 s345
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSObject+SBJSON.h
-c000000004F17D8280000000000000A01
-t1326962728
-s2561
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSObject+SBJSON.m
-c000000004F17D828000000000000089E
-t1326962728
-s2206
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSString+Additions.h
-c000000004F17D828000000000000024E
-t1326962728
-s590
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSString+Additions.h.m
 c000000004F0AA2CC0000000000000DAE
@@ -112,64 +142,64 @@ t1326962728
 s3502
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSString+SBJSON.h
-c000000004F17D8280000000000000916
-t1326962728
-s2326
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSString+SBJSON.m
-c000000004F17D828000000000000087D
-t1326962728
-s2173
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJSON.h
-c000000004F17D8280000000000000AED
-t1326962728
-s2797
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJSON.m
-c000000004F17D8280000000000001ABC
-t1326962728
-s6844
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJsonBase.h
-c000000004F17D8280000000000000B82
-t1326962728
-s2946
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJsonBase.m
-c000000004F17D8280000000000000AC1
-t1326962728
-s2753
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJsonParser.h
-c000000004F17D8280000000000000C0B
-t1326962728
-s3083
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJsonParser.m
-c000000004F17D82800000000000036D0
-t1326962728
-s14032
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJsonWriter.h
-c000000004F17D8280000000000001140
-t1326962728
-s4416
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJsonWriter.m
-c000000004F17D8280000000000001F26
-t1326962728
-s7974
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector.h
-c000000004F17D9AA0000000000000996
-t1326963114
-s2454
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector.m
-c000000004F17D8CA00000000000060C0
-t1326962890
-s24768
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector.xib
 c000000004F17D828000000000000490A
@@ -177,24 +207,24 @@ t1326962728
 s18698
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/UIAlertView+UITableView.h
-c000000004F17D8280000000000000587
-t1326962728
-s1415
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/UIAlertView+UITableView.m
-c000000004F17D82800000000000016A2
-t1326962728
-s5794
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/ViewController.h
-c000000004F17D8280000000000000118
-t1326962728
-s280
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/ViewController.m
-c000000004F17D98C000000000000098D
-t1326963084
-s2445
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/checked.png
 c000000004F17D82800000000000009AE
@@ -212,9 +242,9 @@ t1326962728
 s5227
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/main.m
-c000000004F17D8280000000000000164
-t1326962728
-s356
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/unchecked.png
 c000000004F17D8280000000000000611
@@ -322,13 +352,209 @@ N/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.
 t1326962892
 s2784
 
+N/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/AppDelegate.m
+c000000004F8FFB680000000000000A14
+t1334836072
+s2580
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/MultiContactsSelector-Prefix.pch
+c000000004F8FFB680000000000000159
+t1334836072
+s345
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/Additions/Address+Additions.m
+c000000004F8FFB680000000000000540
+t1334836072
+s1344
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/Additions/NSString+Additions.m
+c000000004F8FFB680000000000000DAE
+t1334836072
+s3502
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/Images/checked.png
+c000000004F8FFB6800000000000009AE
+t1334836072
+s2478
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/Images/unchecked.png
+c000000004F8FFB680000000000000611
+t1334836072
+s1553
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/NSObject+SBJSON.m
+c000000004F8FFB68000000000000089E
+t1334836072
+s2206
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/NSString+SBJSON.m
+c000000004F8FFB68000000000000087D
+t1334836072
+s2173
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJSON.m
+c000000004F8FFB680000000000001ABC
+t1334836072
+s6844
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonBase.m
+c000000004F8FFB680000000000000AC1
+t1334836072
+s2753
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonParser.m
+c000000004F8FFB6800000000000036D0
+t1334836072
+s14032
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonWriter.m
+c000000004F8FFB680000000000001F26
+t1334836072
+s7974
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/SMContactsSelector.m
+c000000004F9013F1000000000000695B
+t1334842353
+s26971
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/SMContactsSelector.xib
+c000000004F9009950000000000004E38
+t1334839701
+s20024
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/UIAlertView+UITableView/UIAlertView+UITableView.m
+c000000004F8FFB6800000000000016A2
+t1334836072
+s5794
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/ViewController.m
+c000000004F9011180000000000000A03
+t1334841624
+s2563
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/en.lproj/InfoPlist.strings
+c000000004F8FFB68000000000000002D
+t1334836072
+s45
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/en.lproj/ViewController.xib
+c000000004F8FFB68000000000000146B
+t1334836072
+s5227
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/main.m
+c000000004F8FFB680000000000000164
+t1334836072
+s356
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app
+t1334836072
+s306
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app.dSYM
+t1334836072
+s102
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/Info.plist
+t1334836072
+s889
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/MultiContactsSelector
+t1334836072
+s133948
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/PkgInfo
+t1334836072
+s8
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/SMContactsSelector.nib
+t1334836072
+s2264
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/checked.png
+t1334836072
+s2478
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/en.lproj/InfoPlist.strings
+t1334836072
+s42
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/en.lproj/ViewController.nib
+t1334836072
+s823
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/unchecked.png
+t1334836072
+s1553
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/Address+Additions.o
+t2
+s0
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/AppDelegate.o
+t1334836072
+s52416
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/MultiContactsSelector.LinkFileList
+c000000004F9015820000000000000867
+t1334842754
+s2151
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSObject+SBJSON.o
+t1334836072
+s5672
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+Additions.o
+t2
+s0
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+SBJSON.o
+t1334836072
+s5624
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJSON.o
+t1334836072
+s16288
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonBase.o
+t1334836072
+s10044
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonParser.o
+t1334836072
+s31976
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonWriter.o
+t1334836072
+s24088
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SMContactsSelector.o
+t1334836072
+s138236
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/UIAlertView+UITableView.o
+t1334836072
+s70616
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/ViewController.o
+t1334836072
+s53368
+
+N/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/main.o
+t1334836072
+s2784
+
+N/var/folders/jz/x1_qydqd0_37csvhjbynhrqc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-gfmqibdtdruaszeiuymkhtnekmds/MultiContactsSelector-Prefix.pch.pth
+t2
+s0
+
 N/var/folders/st/strMJA7BGFCR09fb9peT7k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-fmdsyurfjvsevygowhhciwkgatri/MultiContactsSelector-Prefix.pch.pth
 t1326962892
 s3926184
 
 NMultiContactsSelector/MultiContactsSelector-Info.plist
-c000000004F17D82800000000000004C0
-t1326962728
+c000000004F8FFB6800000000000004C0
+t1334836072
 s1216
 
 CBuild AST from /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/Address+Additions.m
@@ -373,9 +599,48 @@ r0
 CBuild AST from /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/main.m
 r0
 
+CBuild AST from /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/AppDelegate.m
+r0
+
+CBuild AST from /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/Additions/Address+Additions.m
+r0
+
+CBuild AST from /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/Additions/NSString+Additions.m
+r0
+
+CBuild AST from /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/NSObject+SBJSON.m
+r0
+
+CBuild AST from /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/NSString+SBJSON.m
+r0
+
+CBuild AST from /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJSON.m
+r0
+
+CBuild AST from /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonBase.m
+r0
+
+CBuild AST from /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonParser.m
+r0
+
+CBuild AST from /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonWriter.m
+r0
+
+CBuild AST from /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/SMContactsSelector.m
+r0
+
+CBuild AST from /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/UIAlertView+UITableView/UIAlertView+UITableView.m
+r0
+
+CBuild AST from /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/ViewController.m
+r0
+
+CBuild AST from /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/main.m
+r0
+
 CCheck dependencies
 r0
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies96b03eb412c8b441^4ca848b412c8b441^---0#1#0#--18"Check dependencies36"6933E057-2E5C-473D-9CBE-ED93C3AE3A43-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies25e867024d40b541^1364a4024d40b541^---0#1#0#--18"Check dependencies36"120B0C18-DF9B-409C-B980-FB732ACB4461-
 
 CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/Address+Additions.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/Address+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s348655692.717723
@@ -390,6 +655,19 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Compile /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/Address+Additions.m25ecb74c10c8b441^02b9c84c10c8b441^---0#0#0#-19%DVTDocumentLocation2@108"file://localhost/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/Address+Additions.m0000000000000000^3189"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/Address+Additions.o MultiContactsSelector/Address+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macpocket1/github/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/st/strMJA7BGFCR09fb9peT7k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-fmdsyurfjvsevygowhhciwkgatri/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/Address+Additions.d -c /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/Address+Additions.m -o /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/Address+Additions.o36"366C6B64-ED46-4FBA-84AA-C1FD1684EEB7-
 
+CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/Address+Additions.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/Additions/Address+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356535556.691508
+e356535556.741468
+r1
+xCompileC
+xbuild/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/Address+Additions.o
+x/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/Additions/Address+Additions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"Compile /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/Additions/Address+Additions.mef38b1044d40b541^85d0bd044d40b541^---0#0#0#-19%DVTDocumentLocation2@131"file://localhost/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/Additions/Address+Additions.m0000000000000000^3788"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/Address+Additions.o MultiContactsSelector/SMContactsSelector/Additions/Address+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/sid/Desktop/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/jz/x1_qydqd0_37csvhjbynhrqc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-gfmqibdtdruaszeiuymkhtnekmds/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/Address+Additions.d --serialize-diagnostics /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/Address+Additions.dia -c /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/Additions/Address+Additions.m -o /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/Address+Additions.o36"D4BDBAAA-B8D4-475D-956F-1B7589790CB5-
+
 CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/AppDelegate.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s348656070.008201
 e348656070.201324
@@ -403,6 +681,19 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/AppDelegate.m003802c611c8b441^a69833c611c8b441^---0#0#0#-19%DVTDocumentLocation2@102"file://localhost/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/AppDelegate.m0000000000000000^3159"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/AppDelegate.o MultiContactsSelector/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macpocket1/github/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/st/strMJA7BGFCR09fb9peT7k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-fmdsyurfjvsevygowhhciwkgatri/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/AppDelegate.d -c /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/AppDelegate.m -o /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/AppDelegate.o36"6513936C-762D-4406-A40E-B06E1278613A-
 
+CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/AppDelegate.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356535556.559173
+e356535556.690139
+r1
+xCompileC
+xbuild/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/AppDelegate.o
+x/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/AppDelegate.m09508f044d40b541^f3acb0044d40b541^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/AppDelegate.m0000000000000000^3694"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/AppDelegate.o MultiContactsSelector/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/sid/Desktop/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/jz/x1_qydqd0_37csvhjbynhrqc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-gfmqibdtdruaszeiuymkhtnekmds/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/AppDelegate.dia -c /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/AppDelegate.m -o /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/AppDelegate.o36"C5600532-C8F7-4352-A59D-F60B45829461-
+
 CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSObject+SBJSON.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s348655693.042747
 e348655693.101211
@@ -415,6 +706,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Compile /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSObject+SBJSON.mcf130b4d10c8b441^01f8234d10c8b441^---0#0#0#-19%DVTDocumentLocation2@106"file://localhost/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSObject+SBJSON.m0000000000000000^3179"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSObject+SBJSON.o MultiContactsSelector/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macpocket1/github/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/st/strMJA7BGFCR09fb9peT7k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-fmdsyurfjvsevygowhhciwkgatri/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSObject+SBJSON.d -c /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSObject+SBJSON.m -o /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSObject+SBJSON.o36"F87060F0-14C4-44A2-9501-17652706C4B6-
+
+CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSObject+SBJSON.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356535556.742779
+e356535556.783963
+r1
+xCompileC
+xbuild/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSObject+SBJSON.o
+x/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/NSObject+SBJSON.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Compile /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/NSObject+SBJSON.m8258be044d40b541^9ab1c8044d40b541^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/NSObject+SBJSON.m0000000000000000^3766"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSObject+SBJSON.o MultiContactsSelector/SMContactsSelector/JSON/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/sid/Desktop/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/jz/x1_qydqd0_37csvhjbynhrqc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-gfmqibdtdruaszeiuymkhtnekmds/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSObject+SBJSON.d --serialize-diagnostics /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSObject+SBJSON.dia -c /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/NSObject+SBJSON.m -o /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSObject+SBJSON.o36"F46F00B5-E351-4531-B4AF-3116F03A9F07-
 
 CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+Additions.h.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSString+Additions.h.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s347790080.151495
@@ -442,6 +746,19 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compile /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSString+Additions.mdbc0f54c10c8b441^8c2c0d4d10c8b441^---0#0#0#-19%DVTDocumentLocation2@109"file://localhost/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSString+Additions.m0000000000000000^3194"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+Additions.o MultiContactsSelector/NSString+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macpocket1/github/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/st/strMJA7BGFCR09fb9peT7k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-fmdsyurfjvsevygowhhciwkgatri/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+Additions.d -c /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSString+Additions.m -o /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+Additions.o36"2C8FE511-D956-4595-B61B-134D2FCD66DC-
 
+CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+Additions.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/Additions/NSString+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356535556.714017
+e356535556.772309
+r1
+xCompileC
+xbuild/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+Additions.o
+x/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/Additions/NSString+Additions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"Compile /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/Additions/NSString+Additions.mcff8b6044d40b541^19cac5044d40b541^---0#0#0#-19%DVTDocumentLocation2@132"file://localhost/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/Additions/NSString+Additions.m0000000000000000^3794"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+Additions.o MultiContactsSelector/SMContactsSelector/Additions/NSString+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/sid/Desktop/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/jz/x1_qydqd0_37csvhjbynhrqc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-gfmqibdtdruaszeiuymkhtnekmds/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+Additions.d --serialize-diagnostics /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+Additions.dia -c /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/Additions/NSString+Additions.m -o /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+Additions.o36"42F33A4B-14B9-40E5-8C2C-807AC21AE48A-
+
 CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+SBJSON.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s348655693.103743
 e348655693.205703
@@ -454,6 +771,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Compile /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSString+SBJSON.m36af1a4d10c8b441^af5e494d10c8b441^---0#0#0#-19%DVTDocumentLocation2@106"file://localhost/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSString+SBJSON.m0000000000000000^3179"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+SBJSON.o MultiContactsSelector/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macpocket1/github/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/st/strMJA7BGFCR09fb9peT7k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-fmdsyurfjvsevygowhhciwkgatri/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+SBJSON.d -c /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/NSString+SBJSON.m -o /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+SBJSON.o36"52E0D6DF-2DAE-4450-83B3-5D7CFF68C9A0-
+
+CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+SBJSON.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356535556.773625
+e356535556.819616
+r1
+xCompileC
+xbuild/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+SBJSON.o
+x/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/NSString+SBJSON.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Compile /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/NSString+SBJSON.m8b37c6044d40b541^105ad3044d40b541^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/NSString+SBJSON.m0000000000000000^3766"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+SBJSON.o MultiContactsSelector/SMContactsSelector/JSON/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/sid/Desktop/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/jz/x1_qydqd0_37csvhjbynhrqc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-gfmqibdtdruaszeiuymkhtnekmds/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+SBJSON.d --serialize-diagnostics /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+SBJSON.dia -c /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/NSString+SBJSON.m -o /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/NSString+SBJSON.o36"16C711AF-7173-4A4C-96B4-6CE8C0F37141-
 
 CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJSON.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s348655692.717762
@@ -468,6 +798,19 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJSON.m46ecb74c10c8b441^e36bc34c10c8b441^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJSON.m0000000000000000^3134"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJSON.o MultiContactsSelector/SBJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macpocket1/github/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/st/strMJA7BGFCR09fb9peT7k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-fmdsyurfjvsevygowhhciwkgatri/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJSON.d -c /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJSON.m -o /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJSON.o36"57425A7D-E759-45AF-898C-E9E4364E3674-
 
+CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJSON.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356535556.785283
+e356535556.875776
+r1
+xCompileC
+xbuild/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJSON.o
+x/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJSON.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Compile /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJSON.m8332c9044d40b541^8732e0044d40b541^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJSON.m0000000000000000^3712"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJSON.o MultiContactsSelector/SMContactsSelector/JSON/SBJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/sid/Desktop/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/jz/x1_qydqd0_37csvhjbynhrqc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-gfmqibdtdruaszeiuymkhtnekmds/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJSON.d --serialize-diagnostics /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJSON.dia -c /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJSON.m -o /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJSON.o36"0E867C12-5E95-4A6D-8D9D-6E3C266EF0C4-
+
 CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonBase.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJsonBase.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s348655693.184951
 e348655693.242031
@@ -480,6 +823,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Compile /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJsonBase.ma6812f4d10c8b441^006f494d10c8b441^---0#0#0#-19%DVTDocumentLocation2@101"file://localhost/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJsonBase.m0000000000000000^3154"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonBase.o MultiContactsSelector/SBJsonBase.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macpocket1/github/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/st/strMJA7BGFCR09fb9peT7k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-fmdsyurfjvsevygowhhciwkgatri/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonBase.d -c /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJsonBase.m -o /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonBase.o36"0880DA79-5CDD-4034-9B44-6D957EB6561A-
+
+CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonBase.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonBase.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356535556.848081
+e356535556.914540
+r1
+xCompileC
+xbuild/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonBase.o
+x/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonBase.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Compile /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonBase.m6a16dc044d40b541^7d1fea044d40b541^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonBase.m0000000000000000^3736"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonBase.o MultiContactsSelector/SMContactsSelector/JSON/SBJsonBase.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/sid/Desktop/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/jz/x1_qydqd0_37csvhjbynhrqc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-gfmqibdtdruaszeiuymkhtnekmds/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonBase.d --serialize-diagnostics /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonBase.dia -c /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonBase.m -o /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonBase.o36"6A878251-2C34-433A-BAFC-FE558B64A3A0-
 
 CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonParser.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJsonParser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s348655693.209114
@@ -494,6 +850,19 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Compile /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJsonParser.m86ad354d10c8b441^af42664d10c8b441^---0#0#0#-19%DVTDocumentLocation2@103"file://localhost/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJsonParser.m0000000000000000^3164"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonParser.o MultiContactsSelector/SBJsonParser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macpocket1/github/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/st/strMJA7BGFCR09fb9peT7k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-fmdsyurfjvsevygowhhciwkgatri/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonParser.d -c /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJsonParser.m -o /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonParser.o36"A0EA285C-45B5-4C1D-9F1E-1A9B369710A8-
 
+CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonParser.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonParser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356535556.877106
+e356535556.967870
+r1
+xCompileC
+xbuild/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonParser.o
+x/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonParser.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Compile /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonParser.ma7b2e0044d40b541^b9c6f7044d40b541^---0#0#0#-19%DVTDocumentLocation2@121"file://localhost/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonParser.m0000000000000000^3748"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonParser.o MultiContactsSelector/SMContactsSelector/JSON/SBJsonParser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/sid/Desktop/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/jz/x1_qydqd0_37csvhjbynhrqc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-gfmqibdtdruaszeiuymkhtnekmds/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonParser.d --serialize-diagnostics /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonParser.dia -c /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonParser.m -o /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonParser.o36"FB41F006-F693-4DEC-B262-2C864C8861CD-
+
 CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonWriter.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJsonWriter.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s348655693.243498
 e348655693.390655
@@ -506,6 +875,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Compile /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJsonWriter.mfb763e4d10c8b441^c30d644d10c8b441^---0#0#0#-19%DVTDocumentLocation2@103"file://localhost/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJsonWriter.m0000000000000000^3164"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonWriter.o MultiContactsSelector/SBJsonWriter.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macpocket1/github/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/st/strMJA7BGFCR09fb9peT7k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-fmdsyurfjvsevygowhhciwkgatri/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonWriter.d -c /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SBJsonWriter.m -o /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonWriter.o36"F3578D52-E64A-478C-9A50-6ACA80526E1D-
+
+CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonWriter.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonWriter.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356535556.916013
+e356535556.984367
+r1
+xCompileC
+xbuild/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonWriter.o
+x/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonWriter.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Compile /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonWriter.m75b0ea044d40b541^47fffb044d40b541^---0#0#0#-19%DVTDocumentLocation2@121"file://localhost/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonWriter.m0000000000000000^3748"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonWriter.o MultiContactsSelector/SMContactsSelector/JSON/SBJsonWriter.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/sid/Desktop/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/jz/x1_qydqd0_37csvhjbynhrqc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-gfmqibdtdruaszeiuymkhtnekmds/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonWriter.d --serialize-diagnostics /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonWriter.dia -c /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/JSON/SBJsonWriter.m -o /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SBJsonWriter.o36"A58A036E-5499-48EF-828F-B62681E3E694-
 
 CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SMContactsSelector.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s348656070.202642
@@ -520,6 +902,19 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compile /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector.m98fc33c611c8b441^2f516dc611c8b441^---0#0#0#-19%DVTDocumentLocation2@109"file://localhost/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector.m0000000000000000^3194"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SMContactsSelector.o MultiContactsSelector/SMContactsSelector.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macpocket1/github/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/st/strMJA7BGFCR09fb9peT7k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-fmdsyurfjvsevygowhhciwkgatri/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SMContactsSelector.d -c /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector.m -o /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SMContactsSelector.o36"26D3BC36-017E-4302-AB6F-DDCCB2E3C9B6-
 
+CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SMContactsSelector.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/SMContactsSelector.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356535556.969391
+e356535557.182240
+r1
+xCompileC
+xbuild/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SMContactsSelector.o
+x/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/SMContactsSelector.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Compile /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/SMContactsSelector.m1151f8044d40b541^a3ac2f054d40b541^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/SMContactsSelector.m0000000000000000^3774"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SMContactsSelector.o MultiContactsSelector/SMContactsSelector/SMContactsSelector.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/sid/Desktop/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/jz/x1_qydqd0_37csvhjbynhrqc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-gfmqibdtdruaszeiuymkhtnekmds/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SMContactsSelector.d --serialize-diagnostics /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SMContactsSelector.dia -c /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/SMContactsSelector.m -o /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/SMContactsSelector.o36"766C6E1B-A70E-45D0-AA62-9CCA7664371D-
+
 CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/UIAlertView+UITableView.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/UIAlertView+UITableView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s348655693.391868
 e348655693.475993
@@ -532,6 +927,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Compile /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/UIAlertView+UITableView.mca70644d10c8b441^fddb794d10c8b441^---0#0#0#-19%DVTDocumentLocation2@114"file://localhost/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/UIAlertView+UITableView.m0000000000000000^3219"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/UIAlertView+UITableView.o MultiContactsSelector/UIAlertView+UITableView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macpocket1/github/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/st/strMJA7BGFCR09fb9peT7k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-fmdsyurfjvsevygowhhciwkgatri/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/UIAlertView+UITableView.d -c /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/UIAlertView+UITableView.m -o /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/UIAlertView+UITableView.o36"721427A1-79AD-4BB5-9CFC-81CAC2622A7F-
+
+CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/UIAlertView+UITableView.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/UIAlertView+UITableView/UIAlertView+UITableView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356535556.985721
+e356535557.113695
+r1
+xCompileC
+xbuild/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/UIAlertView+UITableView.o
+x/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/UIAlertView+UITableView/UIAlertView+UITableView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection143"Compile /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/UIAlertView+UITableView/UIAlertView+UITableView.md481fc044d40b541^94831d054d40b541^---0#0#0#-19%DVTDocumentLocation2@151"file://localhost/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/UIAlertView+UITableView/UIAlertView+UITableView.m0000000000000000^3852"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/UIAlertView+UITableView.o MultiContactsSelector/SMContactsSelector/UIAlertView+UITableView/UIAlertView+UITableView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/sid/Desktop/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/jz/x1_qydqd0_37csvhjbynhrqc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-gfmqibdtdruaszeiuymkhtnekmds/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/UIAlertView+UITableView.d --serialize-diagnostics /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/UIAlertView+UITableView.dia -c /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/UIAlertView+UITableView/UIAlertView+UITableView.m -o /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/UIAlertView+UITableView.o36"3029638D-A13D-49E8-814C-C0688411F6E4-
 
 CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/ViewController.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s348656070.009310
@@ -546,6 +954,19 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compile /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/ViewController.ma58602c611c8b441^a20e3bc611c8b441^---0#0#0#-19%DVTDocumentLocation2@105"file://localhost/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/ViewController.m0000000000000000^3174"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/ViewController.o MultiContactsSelector/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macpocket1/github/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/st/strMJA7BGFCR09fb9peT7k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-fmdsyurfjvsevygowhhciwkgatri/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/ViewController.d -c /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/ViewController.m -o /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/ViewController.o36"56347A24-D3A7-46B3-A03D-1D781B13BD2F-
 
+CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/ViewController.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356535556.609951
+e356535556.712746
+r1
+xCompileC
+xbuild/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/ViewController.o
+x/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/ViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/ViewController.mf94e9c044d40b541^8ba7b6044d40b541^---0#0#0#-19%DVTDocumentLocation2@99"file://localhost/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/ViewController.m0000000000000000^3712"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/ViewController.o MultiContactsSelector/ViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/sid/Desktop/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/jz/x1_qydqd0_37csvhjbynhrqc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-gfmqibdtdruaszeiuymkhtnekmds/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/ViewController.d --serialize-diagnostics /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/ViewController.dia -c /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/ViewController.m -o /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/ViewController.o36"98014374-E14D-411D-9174-59F94F9422FD-
+
 CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/main.o /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s348655692.764608
 e348655692.839244
@@ -558,6 +979,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/main.mc7dac34c10c8b441^3ae8d64c10c8b441^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/main.m0000000000000000^3124"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/main.o MultiContactsSelector/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/macpocket1/github/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/st/strMJA7BGFCR09fb9peT7k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-fmdsyurfjvsevygowhhciwkgatri/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/main.d -c /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/main.m -o /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/main.o36"391B8026-6F58-483A-9451-A15E0E2034D4-
+
+CCompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/main.o /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356535556.559168
+e356535556.608629
+r1
+xCompileC
+xbuild/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/main.o
+x/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compile /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/main.m09508f044d40b541^3ecf9b044d40b541^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/main.m0000000000000000^3652"CompileC build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/main.o MultiContactsSelector/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/sid/Desktop/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator -include /var/folders/jz/x1_qydqd0_37csvhjbynhrqc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-gfmqibdtdruaszeiuymkhtnekmds/MultiContactsSelector-Prefix.pch -MMD -MT dependencies -MF /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/main.dia -c /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/main.m -o /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/main.o36"0BF6ACCF-BFAE-4E15-9EFD-2E77B84936D6-
 
 CCompileXIB /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector.xib
 s347790081.280645
@@ -575,6 +1009,17 @@ xCompileXIB
 x/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/en.lproj/ViewController.xib
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Compiling /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/en.lproj/ViewController.xiba9f84301dbbab441^d89e8503dbbab441^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/en.lproj/ViewController.xib0000000000000000^787"CompileXIB MultiContactsSelector/en.lproj/ViewController.xib    cd /Users/macpocket1/github/MultiContactsSelector-ios    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/en.lproj/ViewController.nib /Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/en.lproj/ViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk36"51DF58E3-CB9C-42C4-B461-B0552961947F-
 
+CCompileXIB /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/SMContactsSelector.xib
+s356535557.623663
+e356535558.839634
+r1
+xCompileXIB
+x/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/SMContactsSelector.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection118"Compiling /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/SMContactsSelector.xib9cc59f054d40b541^3011d7064d40b541^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/SMContactsSelector.xib0000000000000000^952"CompileXIB MultiContactsSelector/SMContactsSelector/SMContactsSelector.xib    cd /Users/sid/Desktop/MultiContactsSelector-ios    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/SMContactsSelector.nib /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/SMContactsSelector/SMContactsSelector.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk36"22AD33AB-2498-4FA4-980F-943062627488-
+
+CCompileXIB /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/en.lproj/ViewController.xib
+r0
+
 CCopyStringsFile /Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/en.lproj/InfoPlist.strings MultiContactsSelector/en.lproj/InfoPlist.strings
 s347790081.263344
 e347790081.279461
@@ -583,6 +1028,15 @@ xCopyStringsFile
 x/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/en.lproj/InfoPlist.strings
 xMultiContactsSelector/en.lproj/InfoPlist.strings
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy MultiContactsSelector/en.lproj/InfoPlist.strings38874301dbbab441^3cd85201dbbab441^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/en.lproj/InfoPlist.strings0000000000000000^591"CopyStringsFile build/Debug-iphonesimulator/MultiContactsSelector.app/en.lproj/InfoPlist.strings MultiContactsSelector/en.lproj/InfoPlist.strings    cd /Users/macpocket1/github/MultiContactsSelector-ios    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/en.lproj -- MultiContactsSelector/en.lproj/InfoPlist.strings36"62640763-468C-4DB4-BB4B-CBD9A18531A5-
+
+CCopyStringsFile /Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/en.lproj/InfoPlist.strings MultiContactsSelector/en.lproj/InfoPlist.strings
+r0
+
+CCpResource MultiContactsSelector/SMContactsSelector/Images/checked.png build/Debug-iphonesimulator/MultiContactsSelector.app/checked.png
+r0
+
+CCpResource MultiContactsSelector/SMContactsSelector/Images/unchecked.png build/Debug-iphonesimulator/MultiContactsSelector.app/unchecked.png
+r0
 
 CCpResource MultiContactsSelector/checked.png build/Debug-iphonesimulator/MultiContactsSelector.app/checked.png
 s347790082.772199
@@ -611,6 +1065,15 @@ x/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/
 x/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/MultiContactsSelector
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection120"Generating /Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app.dSYM72fac6c611c8b441^82e623c711c8b441^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app.dSYM/0000000000000000^613"GenerateDSYMFile build/Debug-iphonesimulator/MultiContactsSelector.app.dSYM build/Debug-iphonesimulator/MultiContactsSelector.app/MultiContactsSelector    cd /Users/macpocket1/github/MultiContactsSelector-ios    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/MultiContactsSelector -o /Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app.dSYM36"3223415D-136D-4DD2-AB35-10686561DC41-
 
+CGenerateDSYMFile /Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app.dSYM /Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/MultiContactsSelector
+s356535557.549646
+e356535557.611407
+r1
+xGenerateDSYMFile
+x/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app.dSYM
+x/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/MultiContactsSelector
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Generating /Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app.dSYMd1cf8c054d40b541^a8e09c054d40b541^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app.dSYM/0000000000000000^736"GenerateDSYMFile build/Debug-iphonesimulator/MultiContactsSelector.app.dSYM build/Debug-iphonesimulator/MultiContactsSelector.app/MultiContactsSelector    cd /Users/sid/Desktop/MultiContactsSelector-ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/dsymutil /Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/MultiContactsSelector -o /Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app.dSYM36"CA69DAFB-8C60-4A4F-BCAC-60A6552F78F9-
+
 CLd /Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/MultiContactsSelector normal i386
 s348656070.428883
 e348656070.774044
@@ -621,6 +1084,16 @@ xnormal
 xi386
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection131"Link /Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/MultiContactsSelectorc6e06dc611c8b441^3733c6c611c8b441^---0#0#0#--1237"Ld build/Debug-iphonesimulator/MultiContactsSelector.app/MultiContactsSelector normal i386    cd /Users/macpocket1/github/MultiContactsSelector-ios    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -L/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator -F/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator -filelist /Users/macpocket1/github/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/MultiContactsSelector.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -no_implicit_dylibs -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -framework AddressBookUI -framework AddressBook -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/MultiContactsSelector36"74E49F3C-CB91-492F-A9D9-AE6EBD78F47A-
 
+CLd /Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/MultiContactsSelector normal i386
+s356535557.188999
+e356535557.543089
+r1
+xLd
+x/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/MultiContactsSelector
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"Link /Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/MultiContactsSelector948430054d40b541^76188b054d40b541^---0#0#0#--1326"Ld build/Debug-iphonesimulator/MultiContactsSelector.app/MultiContactsSelector normal i386    cd /Users/sid/Desktop/MultiContactsSelector-ios    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -L/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator -F/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator -filelist /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/Objects-normal/i386/MultiContactsSelector.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -no_implicit_dylibs -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -framework AddressBookUI -framework AddressBook -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/MultiContactsSelector36"6A082E44-346E-4813-911A-A47CCD0E5332-
+
 CProcessInfoPlistFile /Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/Info.plist MultiContactsSelector/MultiContactsSelector-Info.plist
 s347790077.905445
 e347790077.941540
@@ -630,8 +1103,27 @@ x/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/
 xMultiContactsSelector/MultiContactsSelector-Info.plist
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Process MultiContactsSelector/MultiContactsSelector-Info.plist1ceee7fddabab441^e59bfdfddabab441^---0#0#0#-19%DVTDocumentLocation2@121"file://localhost/Users/macpocket1/github/MultiContactsSelector-ios/MultiContactsSelector/MultiContactsSelector-Info.plist0000000000000000^720"ProcessInfoPlistFile build/Debug-iphonesimulator/MultiContactsSelector.app/Info.plist MultiContactsSelector/MultiContactsSelector-Info.plist    cd /Users/macpocket1/github/MultiContactsSelector-ios    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility MultiContactsSelector/MultiContactsSelector-Info.plist -genpkginfo /Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/Info.plist36"26A1A89E-5659-469E-9C34-C79050A5419E-
 
+CProcessInfoPlistFile /Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app/Info.plist MultiContactsSelector/MultiContactsSelector-Info.plist
+r0
+
 CProcessPCH /Users/macpocket1/Library/Developer/Xcode/DerivedData/MultiContactsSelector-bgrmmuwpbpwzzcgmilumgdfjotar/Index/PrecompiledHeaders/MultiContactsSelector-Prefix-egttgcjewdxirxgusrknkyooncaz_ast/MultiContactsSelector-Prefix.pch.pth MultiContactsSelector/MultiContactsSelector-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
+
+CProcessPCH /Users/sid/Library/Developer/Xcode/DerivedData/MultiContactsSelector-dkvelerbvugujnfeatiiroqpjqfn/Index/PrecompiledHeaders/MultiContactsSelector-Prefix-equwveqrcngsbtahlhuqqqonazxc_ast/MultiContactsSelector-Prefix.pch.pth MultiContactsSelector/MultiContactsSelector-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/jz/x1_qydqd0_37csvhjbynhrqc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-gfmqibdtdruaszeiuymkhtnekmds/MultiContactsSelector-Prefix.pch.pth MultiContactsSelector/MultiContactsSelector-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s356535554.657226
+e356535556.551305
+r1
+xProcessPCH
+x/var/folders/jz/x1_qydqd0_37csvhjbynhrqc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-gfmqibdtdruaszeiuymkhtnekmds/MultiContactsSelector-Prefix.pch.pth
+xMultiContactsSelector/MultiContactsSelector-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Precompile MultiContactsSelector/MultiContactsSelector-Prefix.pchd36aa8024d40b541^ea228d044d40b541^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/MultiContactsSelector-Prefix.pch0000000000000000^3692"ProcessPCH /var/folders/jz/x1_qydqd0_37csvhjbynhrqc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-gfmqibdtdruaszeiuymkhtnekmds/MultiContactsSelector-Prefix.pch.pth MultiContactsSelector/MultiContactsSelector-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/sid/Desktop/MultiContactsSelector-ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-generated-files.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-own-target-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-all-target-headers.hmap -iquote /Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/MultiContactsSelector-project-headers.hmap -I/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/include -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources/i386 -I/Users/sid/Desktop/MultiContactsSelector-ios/build/MultiContactsSelector.build/Debug-iphonesimulator/MultiContactsSelector.build/DerivedSources -F/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator --serialize-diagnostics /var/folders/jz/x1_qydqd0_37csvhjbynhrqc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-gfmqibdtdruaszeiuymkhtnekmds/MultiContactsSelector-Prefix.pch.dia -c /Users/sid/Desktop/MultiContactsSelector-ios/MultiContactsSelector/MultiContactsSelector-Prefix.pch -o /var/folders/jz/x1_qydqd0_37csvhjbynhrqc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-gfmqibdtdruaszeiuymkhtnekmds/MultiContactsSelector-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/jz/x1_qydqd0_37csvhjbynhrqc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-gfmqibdtdruaszeiuymkhtnekmds/MultiContactsSelector-Prefix.pch.d36"1F2F7880-9025-4E6E-90A7-4D38E384EC06-
 
 CProcessPCH /var/folders/st/strMJA7BGFCR09fb9peT7k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiContactsSelector-Prefix-fmdsyurfjvsevygowhhciwkgatri/MultiContactsSelector-Prefix.pch.pth MultiContactsSelector/MultiContactsSelector-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s348655691.067176
@@ -653,4 +1145,12 @@ r1
 xTouch
 x/Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app
 lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Touch /Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app051826c711c8b441^c74a28c711c8b441^---0#0#0#--376"Touch build/Debug-iphonesimulator/MultiContactsSelector.app    cd /Users/macpocket1/github/MultiContactsSelector-ios    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/macpocket1/github/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app36"B8CEC640-85E6-4087-93F4-80624AFF7817-
+
+CTouch /Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app
+s356535558.848510
+e356535558.856586
+r1
+xTouch
+x/Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection104"Touch /Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app554cd9064d40b541^c85edb064d40b541^---0#0#0#--428"Touch build/Debug-iphonesimulator/MultiContactsSelector.app    cd /Users/sid/Desktop/MultiContactsSelector-ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/sid/Desktop/MultiContactsSelector-ios/build/Debug-iphonesimulator/MultiContactsSelector.app36"0557F9A1-D329-499D-9CC4-DD9998EDF1F9-
 

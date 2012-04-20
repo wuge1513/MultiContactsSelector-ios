@@ -45,10 +45,12 @@
 {
     SMContactsSelector *controller = [[SMContactsSelector alloc] initWithNibName:@"SMContactsSelector" bundle:nil];
     controller.delegate = self;
-    controller.requestData = DATA_CONTACT_ID; //DATA_CONTACT_EMAIL , DATA_CONTACT_TELEPHONE
+    controller.requestData = DATA_CONTACT_TELEPHONE; // DATA_CONTACT_ID DATA_CONTACT_EMAIL , DATA_CONTACT_TELEPHONE
+    controller.showModal = YES; //Mandatory: YES or NO
+    controller.showCheckButton = YES; //Mandatory: YES or NO
     
     // Set your contact list setting record ids (optional)
-    controller.recordIDs = [NSArray arrayWithObjects:@"1", @"2", nil];
+    //controller.recordIDs = [NSArray arrayWithObjects:@"1", @"2", nil];
     
     [self presentModalViewController:controller animated:YES];
     [controller release];

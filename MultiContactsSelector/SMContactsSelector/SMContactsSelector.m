@@ -124,6 +124,91 @@
 
 @end
 
+@interface NSMutableArray (Duplicates)
+
+- (NSMutableArray *)removeDuplicateObjects;
+
+- (NSMutableArray *)removeNullValues;
+
+- (NSMutableArray *)reverse;
+
+@end
+
+@implementation NSMutableArray (Duplicates)
+
+- (NSMutableArray *)reverse
+{
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:[self count]];
+    NSEnumerator *enumerator = [self reverseObjectEnumerator];
+    
+    for (id element in enumerator) 
+    {
+        [array addObject:element];
+    }
+    
+    return array;
+}
+
+- (NSMutableArray *)removeNullValues
+{
+    NSMutableArray *removed = [[NSMutableArray alloc] initWithArray:self];
+    int index = 0;
+    
+    for (NSDictionary *d in self)
+    {
+        if ([[d valueForKey:@"name"] containsString:@"null"])
+        {
+            [removed removeObjectAtIndex:index];
+        }
+        
+        index++;
+    }
+    
+    return removed;
+}
+
+- (NSMutableArray *)removeDuplicateObjects
+{
+    NSMutableArray *removed = [[NSMutableArray alloc] initWithArray:self];
+    NSMutableArray *removedTemp = [[[NSMutableArray alloc] initWithArray:self] reverse];
+    NSMutableArray *selfTemp = [[[NSMutableArray alloc] initWithArray:self] reverse];
+
+    int index = [removed indexOfObject:[removed lastObject]];
+    
+    for (NSDictionary *d in selfTemp)
+    {
+        NSString *t = [NSString stringWithFormat:@"%@", [d valueForKey:@"name"]];
+        NSString *str1 = [t stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        
+        int count = 0;
+        for (NSDictionary *dict in removedTemp)
+        {
+            NSString *t = [NSString stringWithFormat:@"%@", [dict valueForKey:@"name"]];
+            NSString *str2 = [t stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+            
+            if ([str1 isEqualToString:str2])
+            {
+                count++;
+                
+                if (count > 1)
+                {
+                    [removed removeObjectAtIndex:index];
+                    index = [removed indexOfObject:[removed lastObject]];
+                    removedTemp = nil;
+                    removedTemp = [removed reverse];
+                    break;
+                }
+            }
+        }
+
+        index--;
+    }
+
+    return removed;
+}
+
+@end
+
 @implementation SMContactsSelector
 @synthesize table;
 @synthesize cancelItem;
@@ -142,11 +227,16 @@
 @synthesize requestData;
 @synthesize alertTitle;
 @synthesize recordIDs;
+@synthesize showModal;
+@synthesize toolBar;
+@synthesize showCheckButton;
+@synthesize upperBar;
 
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
-	
+    
+    self.navigationController.navigationBar.hidden = YES;
     if ((requestData != DATA_CONTACT_TELEPHONE) && 
         (requestData != DATA_CONTACT_EMAIL) &&
         (requestData != DATA_CONTACT_ID))
@@ -182,6 +272,15 @@
 	cancelItem.action = @selector(dismiss);
 	doneItem.action = @selector(acceptAction);
 	
+    if (!showModal) 
+    {
+        toolBar.hidden = YES;
+        CGRect rect = table.frame;
+        rect.size.height += toolBar.frame.size.height;
+        table.frame = rect;
+        table.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    }
+    
 	ABAddressBookRef addressBook = ABAddressBookCreate( );
 	CFArrayRef allPeople = ABAddressBookCopyArrayOfAllPeople( addressBook );
 	CFIndex nPeople = ABAddressBookGetPersonCount(addressBook);
@@ -270,7 +369,7 @@
                 [info setValue:@"" forKey:@"recordIDSelected"];
             }
 		}
-        
+
         if ([recordIDs count] > 0) 
         {
             BOOL insert = ([[NSString stringWithFormat:@"%d", currentID] isRecordInArray:recordIDs]);
@@ -287,16 +386,22 @@
         if (name) CFRelease(name);
         if (lastNameString) CFRelease(lastNameString);
 	}
-	
+
 	CFRelease(allPeople);
 	CFRelease(addressBook);
     
+    NSMutableArray *temp = [[NSMutableArray alloc] initWithArray:dataArray];
+    temp = [temp removeNullValues];
+    temp = [temp removeDuplicateObjects];
+    dataArray = nil;
+    dataArray = [NSArray arrayWithArray:temp];
+
 	NSSortDescriptor *sortDescriptor;
 	sortDescriptor = [[[NSSortDescriptor alloc] initWithKey:@"name"
 												  ascending:YES] autorelease];
 	NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
 	data = [[dataArray sortedArrayUsingDescriptors:sortDescriptors] retain];
-	
+    
     if (self.savedSearchTerm)
 	{
         [self.searchDisplayController setActive:self.searchWasActive];
@@ -465,6 +570,12 @@
 	UIImage *image = (checked) ? [UIImage imageNamed:@"checked.png"] : [UIImage imageNamed:@"unchecked.png"];
 	
 	UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    if (!showCheckButton)
+        button.hidden = YES;
+    else
+        button.hidden = NO;
+    
 	CGRect frame = CGRectMake(0.0, 0.0, image.size.width, image.size.height);
 	button.frame = frame;
 	
@@ -532,26 +643,39 @@
                                                  dictionary:item
                                                     section:indexPath.section
                                                         row:indexPath.row];
-        
+        alertTable.isModal = showModal;
         [alertTable show];
         [alertTable release];
     }
     else
     {
-        BOOL checked = [[item objectForKey:@"checked"] boolValue];
         
-        [item setObject:[NSNumber numberWithBool:!checked] forKey:@"checked"];
-        
-        UITableViewCell *cell = [item objectForKey:@"cell"];
-        UIButton *button = (UIButton *)cell.accessoryView;
-        
-        UIImage *newImage = (checked) ? [UIImage imageNamed:@"unchecked.png"] : [UIImage imageNamed:@"checked.png"];
-        [button setBackgroundImage:newImage forState:UIControlStateNormal];
-        
-        if (tableView == self.searchDisplayController.searchResultsTableView)
+        if (showModal) 
         {
-            [self.searchDisplayController.searchResultsTableView reloadData];
-            [selectedRow addObject:item];
+            BOOL checked = [[item objectForKey:@"checked"] boolValue];
+            
+            [item setObject:[NSNumber numberWithBool:!checked] forKey:@"checked"];
+            
+            UITableViewCell *cell = [item objectForKey:@"cell"];
+            UIButton *button = (UIButton *)cell.accessoryView;
+            
+            UIImage *newImage = (checked) ? [UIImage imageNamed:@"unchecked.png"] : [UIImage imageNamed:@"checked.png"];
+            [button setBackgroundImage:newImage forState:UIControlStateNormal];
+            
+            if (tableView == self.searchDisplayController.searchResultsTableView)
+            {
+                [self.searchDisplayController.searchResultsTableView reloadData];
+                [selectedRow addObject:item];
+            }
+        }
+        else
+        {
+            if ([self.delegate respondsToSelector:@selector(numberOfRowsSelected:withData:andDataType:)])
+            {
+                [self.delegate numberOfRowsSelected:1 
+                                           withData:[NSArray arrayWithObject:[item valueForKey:@"telephoneSelected"]]
+                                        andDataType:requestData];
+            }
         }
     }
 }
@@ -611,6 +735,16 @@
 	}
     
     selectedItem = nil;
+    
+    if (!showModal) 
+    {
+        if ([self.delegate respondsToSelector:@selector(numberOfRowsSelected:withData:andDataType:)])
+        {
+            [self.delegate numberOfRowsSelected:1 
+                                       withData:[NSArray arrayWithObject:[item valueForKey:@"telephoneSelected"]]
+                                    andDataType:requestData];
+        }
+    }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section 

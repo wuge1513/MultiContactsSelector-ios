@@ -12,6 +12,7 @@
 #import "NSString+Additions.h"
 #import "Address+Additions.h"
 #import "UIAlertView+UITableView.h"
+#import <malloc/malloc.h>
 
 typedef enum 
 {
@@ -35,6 +36,7 @@ typedef enum
 	id delegate;
 	DATA_CONTACT requestData;
     NSArray *recordIDs;
+    BOOL showModal, showCheckButton;
     
 @private
     
@@ -43,6 +45,8 @@ typedef enum
 	IBOutlet UIBarButtonItem *doneItem;
 	IBOutlet UISearchBar *barSearch;
     IBOutlet UISearchBar *searchBar;
+    IBOutlet UIToolbar *toolBar;
+    IBOutlet UINavigationBar *upperBar;
     
     UITableView *currentTable;
     NSArray *data;
@@ -76,5 +80,9 @@ typedef enum
 @property (nonatomic) DATA_CONTACT requestData;
 @property (nonatomic, retain) NSString *alertTitle;
 @property (nonatomic, retain) NSArray *recordIDs;
+@property (nonatomic) BOOL showModal;
+@property (nonatomic, retain) IBOutlet UIToolbar *toolBar;
+@property (nonatomic) BOOL showCheckButton;
+@property (nonatomic, retain) IBOutlet UINavigationBar *upperBar;
 
 @end

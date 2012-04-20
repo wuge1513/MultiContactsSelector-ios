@@ -13,6 +13,10 @@ Example:
     // Set your contact list setting record ids (optional)
     controller.recordIDs = [NSArray arrayWithObjects:@"1", @"2", nil];
     
+    //Window show in Modal or not
+    controller.showModal = YES; //Mandatory: YES or NO
+    //Show tick or not
+    controller.showCheckButton = YES; //Mandatory: YES or NO
     [self presentModalViewController:controller animated:YES];
     [controller release];
 

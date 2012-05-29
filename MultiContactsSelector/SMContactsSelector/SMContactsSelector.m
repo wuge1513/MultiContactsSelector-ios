@@ -391,8 +391,14 @@
 	CFRelease(addressBook);
     
     NSMutableArray *temp = [[NSMutableArray alloc] initWithArray:dataArray];
-    temp = [temp removeNullValues];
+    
+    if (temp && [temp count] > 0)
+    {
+        temp = [temp removeNullValues];
+    }
+    
     temp = [temp removeDuplicateObjects];
+    
     dataArray = nil;
     dataArray = [NSArray arrayWithArray:temp];
 

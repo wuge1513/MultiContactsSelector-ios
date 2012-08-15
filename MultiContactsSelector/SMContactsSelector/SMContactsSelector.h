@@ -63,6 +63,8 @@ typedef enum
 - (void)dismiss;
 - (void)displayChanges:(BOOL)yesOrNO;
 
+- (NSString *)ChineseToLetter:(NSString *)strName;
+
 @property (nonatomic, retain) IBOutlet UITableView *table;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *cancelItem;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *doneItem;

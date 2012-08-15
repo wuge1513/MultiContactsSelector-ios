@@ -20,6 +20,7 @@
 		0F0F6F5414E46F7900AEBBF3 /* SMContactsSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0F6F4514E46F7900AEBBF3 /* SMContactsSelector.m */; };
 		0F0F6F5514E46F7900AEBBF3 /* SMContactsSelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F0F6F4614E46F7900AEBBF3 /* SMContactsSelector.xib */; };
 		0F0F6F5614E46F7900AEBBF3 /* UIAlertView+UITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0F6F4914E46F7900AEBBF3 /* UIAlertView+UITableView.m */; };
+		A9EF57B815DB7A2B005505A2 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = A9EF57B615DB7A2B005505A2 /* pinyin.c */; };
 		B5B8238A145693AF005E1871 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B82389145693AF005E1871 /* UIKit.framework */; };
 		B5B8238C145693AF005E1871 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B8238B145693AF005E1871 /* Foundation.framework */; };
 		B5B8238E145693AF005E1871 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B8238D145693AF005E1871 /* CoreGraphics.framework */; };
@@ -57,6 +58,8 @@
 		0F0F6F4614E46F7900AEBBF3 /* SMContactsSelector.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMContactsSelector.xib; sourceTree = "<group>"; };
 		0F0F6F4814E46F7900AEBBF3 /* UIAlertView+UITableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+UITableView.h"; sourceTree = "<group>"; };
 		0F0F6F4914E46F7900AEBBF3 /* UIAlertView+UITableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+UITableView.m"; sourceTree = "<group>"; };
+		A9EF57B615DB7A2B005505A2 /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinyin.c; sourceTree = "<group>"; };
+		A9EF57B715DB7A2B005505A2 /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
 		B5B82385145693AF005E1871 /* MultiContactsSelector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiContactsSelector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5B82389145693AF005E1871 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B5B8238B145693AF005E1871 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -187,6 +190,8 @@
 			children = (
 				0F0F6F2D14E46F7900AEBBF3 /* SMContactsSelector */,
 				B5B82398145693AF005E1871 /* AppDelegate.h */,
+				A9EF57B615DB7A2B005505A2 /* pinyin.c */,
+				A9EF57B715DB7A2B005505A2 /* pinyin.h */,
 				B5B82399145693AF005E1871 /* AppDelegate.m */,
 				B5B8239B145693AF005E1871 /* ViewController.h */,
 				B5B8239C145693AF005E1871 /* ViewController.m */,
@@ -285,6 +290,7 @@
 				0F0F6F5314E46F7900AEBBF3 /* SBJsonWriter.m in Sources */,
 				0F0F6F5414E46F7900AEBBF3 /* SMContactsSelector.m in Sources */,
 				0F0F6F5614E46F7900AEBBF3 /* UIAlertView+UITableView.m in Sources */,
+				A9EF57B815DB7A2B005505A2 /* pinyin.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +365,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MultiContactsSelector/MultiContactsSelector-Prefix.pch";
 				INFOPLIST_FILE = "MultiContactsSelector/MultiContactsSelector-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -370,6 +377,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MultiContactsSelector/MultiContactsSelector-Prefix.pch";
 				INFOPLIST_FILE = "MultiContactsSelector/MultiContactsSelector-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

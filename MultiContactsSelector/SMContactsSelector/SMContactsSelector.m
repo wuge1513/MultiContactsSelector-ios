@@ -7,6 +7,7 @@
 //
 
 #import "SMContactsSelector.h"
+#import "pinyin.h"
 
 @interface NSArray (Alphabet)
 
@@ -43,6 +44,7 @@
     [letters release];
     return aux;    
 }
+
 
 - (NSMutableArray *)createList
 {
@@ -232,6 +234,16 @@
 @synthesize showCheckButton;
 @synthesize upperBar;
 
+
+- (NSString *)ChineseToLetter:(NSString *)strName
+{
+    //NSString *strTmp = [[strName stringByReplacingOccurrencesOfString:@" " withString:@""] substringToIndex:1];
+    char ch = pinyinFirstLetter([strName characterAtIndex:0]);
+    NSString *nameIndex = [[NSString stringWithFormat:@"%c", ch] uppercaseString];
+    //NSLog(@"nameIndex = %@", nameIndex);
+    return nameIndex;
+}
+
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
@@ -249,7 +261,8 @@
     }
     
     NSString *currentLanguage = [[[[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"] objectAtIndex:0] lowercaseString];
-	
+    
+	NSLog(@"currentLanguage = %@", currentLanguage);
     // Jetzt Spanisch und Englisch nur
     // Por el momento solo ingles y español
     // At the moment only Spanish and English
@@ -260,9 +273,13 @@
         cancelItem.title = @"Cancelar";
         doneItem.title = @"Hecho";
         alertTitle = @"Selecciona";
-	}
-	else
-	{
+	}else if([currentLanguage isEqualToString:@"zh-hans"]){
+        arrayLetters = [[[NSArray englishAlphabet] createList] retain];
+        cancelItem.title = @"取消";
+        doneItem.title = @"完成";
+        alertTitle = @"选择";
+    }
+	else{
 		arrayLetters = [[[NSArray englishAlphabet] createList] retain];
         cancelItem.title = @"Cancel";
         doneItem.title = @"Done";
@@ -296,7 +313,10 @@
         
 		NSString *objs = @"";
         BOOL lotsItems = NO;
-		for (int i = 0; i < [propertyArray count]; i++)
+        
+        NSInteger ccount = [propertyArray count];
+        
+		for (int i = 0; i < ccount; i++)
 		{
 			if (objs == @"") 
 			{
@@ -311,26 +331,48 @@
         
 		[propertyArray release];
         
-		CFStringRef name;
-        name = ABRecordCopyValue(person, kABPersonFirstNameProperty);
-        CFStringRef lastNameString;
-        lastNameString = ABRecordCopyValue(person, kABPersonLastNameProperty);
-        CFStringRef emailString;
-        emailString = ABRecordCopyValue(person, kABPersonEmailProperty);
         
+		CFStringRef name = ABRecordCopyValue(person, kABPersonFirstNameProperty);
+        CFStringRef lastNameString = ABRecordCopyValue(person, kABPersonLastNameProperty);
+        //CFStringRef emailString = ABRecordCopyValue(person, kABPersonEmailProperty);
+        
+      
 		NSString *nameString = (NSString *)name;
 		NSString *lastName = (NSString *)lastNameString;
         int currentID = (int)ABRecordGetRecordID(person);
+
         
-        if ((id)lastNameString != nil)
+        if ((id)lastNameString != nil && (id)nameString != nil)
         {
-            nameString = [NSString stringWithFormat:@"%@ %@", nameString, lastName];
+            
+            if ([currentLanguage isEqualToString:@"es"])
+            {
+            }else if([currentLanguage isEqualToString:@"zh-hans"]){
+                //汉语格式
+                nameString = [NSString stringWithFormat:@"%@ %@", lastName, nameString];
+            }
+            else{
+                //英语格式
+                nameString = [NSString stringWithFormat:@"%@ %@", nameString, lastName];
+            }
+        }else if ((id)lastNameString == nil && (id)nameString != nil) {
+            nameString = [NSString stringWithFormat:@"%@", nameString];
+        }else if ((id)lastNameString != nil && (id)nameString == nil) {
+            nameString = [NSString stringWithFormat:@"%@", lastNameString];
         }
+
         
         NSMutableDictionary *info = [NSMutableDictionary new];
-        [info setValue:[NSString stringWithFormat:@"%@", [[nameString stringByReplacingOccurrencesOfString:@" " withString:@""] substringToIndex:1]] forKey:@"letter"];
+        
+        //nameString = [[nameString stringByReplacingOccurrencesOfString:@" " withString:@""] substringToIndex:1];
+        [info setValue:[NSString stringWithFormat:@"%@", [self ChineseToLetter:nameString]] forKey:@"letter"];
+
+        //        [info setValue:[NSString stringWithFormat:@"%@", [[nameString stringByReplacingOccurrencesOfString:@" " withString:@""] substringToIndex:1]] forKey:@"letter"];
+        
+      
         [info setValue:[NSString stringWithFormat:@"%@", nameString] forKey:@"name"];
         [info setValue:@"-1" forKey:@"rowSelected"];
+
         
         if ((objs != @"") || ([[objs lowercaseString] rangeOfString:@"null"].location == NSNotFound))
 		{
@@ -381,6 +423,7 @@
         }
         else
             [dataArray addObject:info];
+       
         
         [info release];
         if (name) CFRelease(name);
@@ -390,17 +433,19 @@
 	CFRelease(allPeople);
 	CFRelease(addressBook);
     
-    NSMutableArray *temp = [[NSMutableArray alloc] initWithArray:dataArray];
-    
-    if (temp && [temp count] > 0)
-    {
-        temp = [temp removeNullValues];
-    }
-    
-    temp = [temp removeDuplicateObjects];
-    
-    dataArray = nil;
-    dataArray = [NSArray arrayWithArray:temp];
+//    NSMutableArray *temp = [[NSMutableArray alloc] initWithArray:dataArray];
+//    NSMutableArray *temp2 = [[NSMutableArray alloc] init];
+//    NSMutableArray *temp3 = [[NSMutableArray alloc] init];
+//    
+//    if (temp && [temp count] > 0)
+//    {
+//        temp2 = [temp removeNullValues];
+//    }
+//    
+//    temp3 = [temp2 removeDuplicateObjects];
+//    
+//    dataArray = nil;
+//    dataArray = [NSArray arrayWithArray:temp3];
 
 	NSSortDescriptor *sortDescriptor;
 	sortDescriptor = [[[NSSortDescriptor alloc] initWithKey:@"name"
@@ -421,6 +466,7 @@
 	self.searchDisplayController.searchBar.showsCancelButton = NO;
 	
 	NSMutableDictionary	*info = [NSMutableDictionary new];
+    
 	for (int i = 0; i < [arrayLetters count]; i++)
 	{
 		NSMutableArray *array = [NSMutableArray new];
@@ -430,7 +476,9 @@
 			NSString *name = [dict valueForKey:@"name"];
 			name = [name stringByReplacingOccurrencesOfString:@" " withString:@""];
 			
-			if ([[[name substringToIndex:1] uppercaseString] isEqualToString:[arrayLetters objectAtIndex:i]]) 
+            NSString *tmpName = [self ChineseToLetter:name];
+            if ([ tmpName isEqualToString:[arrayLetters objectAtIndex:i]]) 
+			//if ([[[name substringToIndex:1] uppercaseString] isEqualToString:[arrayLetters objectAtIndex:i]]) 
 			{
 				[array addObject:dict];
 			}
@@ -449,7 +497,10 @@
 			NSString *name = [dict valueForKey:@"name"];
 			name = [name stringByReplacingOccurrencesOfString:@" " withString:@""];
 			
-			if ((![name isLetter]) && (![name containsNullString]))
+            NSString *tmpName = [self ChineseToLetter:name];
+            
+            if ((![tmpName isLetter]) && (![name containsNullString]))
+			//if ((![name isLetter]) && (![name containsNullString]))
 			{
 				[array addObject:dict];
 			}
@@ -760,27 +811,32 @@
 	
 	int i = 0;
 	NSString *sectionString = [arrayLetters objectAtIndex:section];
-	
+
+
 	NSArray *array = (NSArray *)[[dataArray objectAtIndex:0] valueForKey:sectionString];
     
-	for (NSDictionary *dict in array)
-	{
-		NSString *name = [dict valueForKey:@"name"];
-		name = [name stringByReplacingOccurrencesOfString:@" " withString:@""];
-		
-		if (![name isLetter]) 
-		{
-			i++;
-		}
-		else
-		{
-			if ([[[name substringToIndex:1] uppercaseString] isEqualToString:[arrayLetters objectAtIndex:section]]) 
-			{
-				i++;
-			}
-		}
-	}
-	
+    
+    for (NSDictionary *dict in array)
+    {
+        NSString *name = [dict valueForKey:@"name"];
+        
+        NSString *sectionName = [self ChineseToLetter:name];
+     
+        
+        if (![sectionName isLetter]) 
+        {
+            i++;
+        }
+        else
+        {
+            //if ([[[name substringToIndex:1] uppercaseString] isEqualToString:[arrayLetters objectAtIndex:section]]) 
+            if ([sectionName isEqualToString:[arrayLetters objectAtIndex:section]]) 
+            {
+                i++;
+            }
+        }
+    }
+
 	return i;
 }
 
@@ -811,6 +867,7 @@
         return 1;
     }
 	
+    
 	return [arrayLetters count];
 }
 
@@ -821,7 +878,16 @@
         return @"";
     }
 	
-	return [arrayLetters objectAtIndex:section];
+    
+
+    //modify by liulei
+	NSString *sectionString = [arrayLetters objectAtIndex:section];
+	NSArray *array = (NSArray *)[[dataArray objectAtIndex:0] valueForKey:sectionString];
+    if (array.count > 0) {
+        return [arrayLetters objectAtIndex:section];
+    }
+    
+	return nil;//[arrayLetters objectAtIndex:section];
 }
 
 #pragma mark -

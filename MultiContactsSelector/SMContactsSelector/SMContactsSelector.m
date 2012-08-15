@@ -8,6 +8,7 @@
 
 #import "SMContactsSelector.h"
 #import "pinyin.h"
+#import "UserInfoViewController.h"
 
 @interface NSArray (Alphabet)
 
@@ -582,16 +583,20 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	if (tableView == self.searchDisplayController.searchResultsTableView)
-	{
-		[self tableView:self.searchDisplayController.searchResultsTableView accessoryButtonTappedForRowWithIndexPath:indexPath];
-		[self.searchDisplayController.searchResultsTableView deselectRowAtIndexPath:indexPath animated:YES];
-	}
-	else
-	{
-		[self tableView:self.table accessoryButtonTappedForRowWithIndexPath:indexPath];
-		[self.table deselectRowAtIndexPath:indexPath animated:YES];
-	}	
+//	if (tableView == self.searchDisplayController.searchResultsTableView)
+//	{
+//		[self tableView:self.searchDisplayController.searchResultsTableView accessoryButtonTappedForRowWithIndexPath:indexPath];
+//		[self.searchDisplayController.searchResultsTableView deselectRowAtIndexPath:indexPath animated:YES];
+//	}
+//	else
+//	{
+//		[self tableView:self.table accessoryButtonTappedForRowWithIndexPath:indexPath];
+//		[self.table deselectRowAtIndexPath:indexPath animated:YES];
+//	}	
+    
+    UserInfoViewController *userInfoView = [[UserInfoViewController alloc] init];
+    [self presentModalViewController:userInfoView animated:YES];
+    [userInfoView release];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -620,6 +625,7 @@
     
 	cell.textLabel.text = [item objectForKey:@"name"];
 	cell.textLabel.adjustsFontSizeToFitWidth = YES;
+    cell.imageView.image = [UIImage imageNamed:@"checked.png"];
     
 	[item setObject:cell forKey:@"cell"];
 	
